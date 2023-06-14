@@ -30,10 +30,15 @@ public interface NodeDataRepository extends JpaRepository<Nodedata, Integer>
 
     @Query("SELECT new  com.example.demo.dto.KeyValueDTO(name as keyname,  value as keyvalue,  path as keypath , count(*) as count)" +
             " FROM Nodedata where value <> 'NULL' group by name, value, path having count(*)  > 1")
-    List<KeyValueDTO> findAggregate();
+    List<KeyValueDTO> findCommonKeyValuePathCount();
 
     @Query("SELECT name FROM Nodedata")
    List<String> findAgg();
+
+//    @Query("select parent_id from Nodedata  where path = ?1 and value = ?2  and name = ?3")
+//    List<Integer> fetchByParentID(String path, String value, String name);
+
+
 
 
 }

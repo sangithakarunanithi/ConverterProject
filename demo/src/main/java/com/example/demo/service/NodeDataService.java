@@ -8,9 +8,7 @@ import com.example.demo.repo.NodeDataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class NodeDataService
@@ -20,13 +18,7 @@ public class NodeDataService
     NodeDataRepository nodeDataRepository;
 
 
-//    public List<KeyValueDTO> getNodeDataAggregate() {
-//        List<KeyValueDTO> ans = nodeDataRepository.findAggregate();
-//
-//        System.out.println("ans " +ans);
-//
-//        return ans;
-//    }
+
 
     public List<Nodedata> getall() {
         return nodeDataRepository.findAll();
@@ -41,7 +33,7 @@ public class NodeDataService
         HashMap<String,List<String>> map = new HashMap<String,List<String>>();
         List<String> maplist = null;
 
-        List<KeyValueDTO> dbResult = nodeDataRepository.findAggregate();
+        List<KeyValueDTO> dbResult = nodeDataRepository.findCommonKeyValuePathCount();
 
         List<KeyValueDTO> result = new ArrayList<KeyValueDTO>();
         KeyValueDTO newObj = new KeyValueDTO();
@@ -156,7 +148,71 @@ public class NodeDataService
     }
 
 
+    public void getaggregateData() {
 
+        List<KeyValueDTO> findCommonKeyValuePathCount = nodeDataRepository.findCommonKeyValuePathCount();
+
+
+
+
+        countAndSort(findCommonKeyValuePathCount);
+
+
+    }
+
+    private void countAndSort(List<KeyValueDTO> findCommonKeyValuePathCount) {
+
+        HashMap<String,Integer> slashCountMap = new HashMap<String,Integer>();
+        HashMap<String,List<String>> collectValueMap = new HashMap<String,List<String>>();
+
+
+        for (KeyValueDTO element : findCommonKeyValuePathCount) {
+            String keypath = element.getKeypath();
+            int count = keypath.length() - keypath.replace("/" , "").length();
+            slashCountMap.put(keypath,count);
+
+            String keyname = element.getKeyname();
+
+
+
+            if(collectValueMap.containsKey(keyname)){
+                collectValueMap.get(keyname).add(element.getKeyvalue());
+            }else{
+                List<String> list = new ArrayList<>();
+                list.add(element.getKeyvalue());
+                collectValueMap.put(element.getKeyname(),list);
+            }
+
+        }
+
+
+
+        Object[] slashList = slashCountMap.entrySet().toArray();
+
+        Arrays.sort(slashList, new Comparator() {
+            public int compare(Object o1, Object o2) {
+                return ((Map.Entry<String, Integer>) o1).getValue().compareTo(((Map.Entry<String, Integer>) o2).getValue());
+            }
+        });
+
+        for (Object each : slashList) {
+            System.out.println(((Map.Entry<String, Integer>) each).getKey() + " : "  + ((Map.Entry<String, Integer>) each).getValue());
+        } //display purpose // do proper sort
+
+
+        for( Map.Entry<String, List<String>> valuemap : collectValueMap.entrySet()){
+            System.out.println(valuemap.getKey() + "====" + valuemap.getValue());
+
+
+        }
+
+// fetch parentid
+
+
+
+
+
+    }
 }
 
 

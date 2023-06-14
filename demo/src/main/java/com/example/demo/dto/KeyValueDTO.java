@@ -14,4 +14,10 @@ public class KeyValueDTO {
     public Long count;
     List<HashMap<String,KeyValueDTO>> enumvalue;
 
+    @Override
+    public String toString() {
+        return keypath  ;
+
+
+    }
 }

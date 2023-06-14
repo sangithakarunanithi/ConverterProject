@@ -35,6 +35,13 @@ public class NodeDataController
     private List<KeyValueDTO> getNodeAggregate()
     {
         return nodeDataService.getaggregate();
+    }  //old code
+
+
+    @GetMapping("/aggregate")
+    private void getAggregateData()
+    {
+         nodeDataService.getaggregateData();
     }
 
 

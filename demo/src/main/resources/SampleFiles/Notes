@@ -6,7 +6,7 @@ where value is not null
 
 2, from this output[sheet1] get the [sheet 2]
 3. order by paths hierarchy [use / if needed]
-4. Identify the ENUM Values (Activity     Event Gateway)
+4. Identify the ENUM Values (Activity Event  Gateway)
 5. select parent_id from aidaptechdtrainer.node  where path = '/teamworks/bpd/BusinessProcessDiagram/pool/lane/flowObject/@componentType' and value = 'Activity'; and name = "componentType"; will return list of parents
 6. run the query with the list of parents as input
 SELECT aidaptechdtrainer.node.name,aidaptechdtrainer.node.path,aidaptechdtrainer.node.value,count(*) as cnt
