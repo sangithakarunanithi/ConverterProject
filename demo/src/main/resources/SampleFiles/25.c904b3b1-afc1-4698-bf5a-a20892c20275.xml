@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <bpd id="25.c904b3b1-afc1-4698-bf5a-a20892c20275" name="Standard HR Open New Position">
+        <lastModified>1683106639634</lastModified>
+        <lastModifiedBy>trghat581</lastModifiedBy>
+        <tenantId isNull="true" />
+        <bpdId>25.c904b3b1-afc1-4698-bf5a-a20892c20275</bpdId>
+        <isTrackingEnabled>false</isTrackingEnabled>
+        <isSpcEnabled>false</isSpcEnabled>
+        <restrictedName isNull="true" />
+        <isCriticalPathEnabled>false</isCriticalPathEnabled>
+        <participantRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.da7e4d23-78cb-4483-98ed-b9c238308a03</participantRef>
+        <businessDataParticipantRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.da7e4d23-78cb-4483-98ed-b9c238308a03</businessDataParticipantRef>
+        <perfMetricParticipantRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.581a472b-5016-479a-b5b5-0a9701c2c42c</perfMetricParticipantRef>
+        <ownerTeamParticipantRef isNull="true" />
+        <timeScheduleType isNull="true" />
+        <timeScheduleName isNull="true" />
+        <timeScheduleExpression isNull="true" />
+        <holidayScheduleType isNull="true" />
+        <holidayScheduleName isNull="true" />
+        <holidayScheduleExpression isNull="true" />
+        <timezoneType isNull="true" />
+        <timezone isNull="true" />
+        <timezoneExpression isNull="true" />
+        <internalName isNull="true" />
+        <description>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;This process covers a manager requesting to create a new position or fill an existing position. The process routes the position request to&amp;nbsp;the Human Resources (HR) department to search for&amp;nbsp;candidates.&lt;/BODY&gt;&lt;/HTML&gt;</description>
+        <type>1</type>
+        <rootBpdId isNull="true" />
+        <parentBpdId isNull="true" />
+        <parentFlowObjectId isNull="true" />
+        <xmlData isNull="true" />
+        <bpmn2Data>&lt;ns15:definitions xmlns:ns15="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process" xmlns:ns3="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/wle" xmlns:ns4="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/case" xmlns:ns5="http://www.ibm.com/bpm/Extensions" xmlns:ns6="http://www.ibm.com/xmlns/prod/bpm/uca" xmlns:ns7="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/team" xmlns:ns8="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/trackinggroup" xmlns:ns9="http://www.ibm.com/xmlns/bpmnx/20100524/v1/BusinessVocabulary" xmlns:ns10="http://www.omg.org/spec/DD/20100524/DI" xmlns:ns11="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns12="http://www.omg.org/spec/BPMN/20100524/BPMNDI" xmlns:ns13="http://www.ibm.com/xmlns/prod/bpm/graph" xmlns:ns14="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/extservice" xmlns:ns16="http://www.ibm.com/bpm/processappsettings" xmlns:ns17="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/auth" xmlns:ns18="http://www.ibm.com/bpm/CoachDesignerNG" xmlns:ns19="http://www.ibm.com/xmlns/links" xmlns:ns20="http://www.ibm.com/bpm/uitheme" xmlns:ns21="http://www.ibm.com/bpm/coachview" xmlns:ns22="http://www.ibm.com/xmlns/tagging" id="4171d231-10cc-4b65-ab3c-97c0c771d12a" targetNamespace="" exporter="http://www.ibm.com/BPM" exporterVersion="8.5.7"&gt;&lt;ns15:process processType="None" isClosed="false" name="Standard HR Open New Position" id="25.c904b3b1-afc1-4698-bf5a-a20892c20275"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;This process covers a manager requesting to create a new position or fill an existing position. The process routes the position request to&amp;amp;nbsp;the Human Resources (HR) department to search for&amp;amp;nbsp;candidates.&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns4:isConvergedProcess&gt;true&lt;/ns4:isConvergedProcess&gt;&lt;ns3:bpdExtension instanceName="&amp;quot;Standard Employee Requisition for &amp;quot; + (tw.local.requisition != null ? tw.local.requisition.requester : &amp;quot;&amp;quot;) + &amp;quot; (&amp;quot; + tw.system.process.name + &amp;quot;)&amp;quot;" dueDateEnabled="true" atRiskCalcEnabled="true" enableTracking="true" allowProjectedPathManagement="true" optimizeExecForLatency="false" sBOSyncEnabled="false" allowContentOperations="true" autoTrackingEnabled="true" autoTrackingName="aEmpRequisition121381434563922"&gt;&lt;ns3:defaultInstanceUI /&gt;&lt;ns3:bpdOwnerInstanceUI /&gt;&lt;ns3:dueDateSettings type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;4&lt;/ns3:dueDate&gt;&lt;/ns3:dueDateSettings&gt;&lt;ns3:workSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;/ns3:workSchedule&gt;&lt;/ns3:bpdExtension&gt;&lt;ns4:caseExtension&gt;&lt;ns4:caseFolder id="b27c8ab3-fc47-41c7-b89f-740940f5a8a1" /&gt;&lt;/ns4:caseExtension&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:ioSpecification /&gt;&lt;ns15:laneSet id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761f"&gt;&lt;ns15:lane name="Hiring Manager" partitionElementRef="24.cd97937f-06ab-43cc-8067-17dea489fdb3" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7612" ns3:isSystemLane="false"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="0" y="0" width="3000" height="187" color="#CCFFCC" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760e&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7620&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;af21cc5f-8ab4-47be-8879-697b062ce829&lt;/ns15:flowNodeRef&gt;&lt;/ns15:lane&gt;&lt;ns15:lane name="General Manager" partitionElementRef="24.eb30156e-52c8-4ec5-9be6-02290d02f827" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7611" ns3:isSystemLane="false"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="0" y="187" width="3000" height="163" color="#CCFFFF" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b2&lt;/ns15:flowNodeRef&gt;&lt;/ns15:lane&gt;&lt;ns15:lane name="Human Resources" partitionElementRef="24.6615a4b0-fd38-4ea5-8bc0-69d2f107369e" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7610" ns3:isSystemLane="false"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="0" y="350" width="3000" height="154" color="#F8F8F8" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9&lt;/ns15:flowNodeRef&gt;&lt;/ns15:lane&gt;&lt;ns15:lane name="System" partitionElementRef="24.6fd38d02-81cf-48ab-bd42-8ff4c0a1628b" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760f" ns3:isSystemLane="true"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="0" y="504" width="3000" height="140" color="#ffffff" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-756b&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564&lt;/ns15:flowNodeRef&gt;&lt;/ns15:lane&gt;&lt;/ns15:laneSet&gt;&lt;ns15:startEvent name="Start" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760e"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;The Standard HR Open New Position process begins.&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="18" y="50" width="24" height="24" color="#A5B7CD" /&gt;&lt;ns2:default&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503&lt;/ns2:default&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503&lt;/ns15:outgoing&gt;&lt;/ns15:startEvent&gt;&lt;ns15:callActivity calledElement="1.1bfbbe13-d8a5-4516-88b6-3d1f29f91af3" default="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523" name="Submit position request" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;The hiring manager submits a request hire someone for a new or existing position.&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns3:activityType&gt;UserTask&lt;/ns3:activityType&gt;&lt;ns3:userTaskSettings&gt;&lt;ns3:narrative&gt;Task: Create position request&lt;/ns3:narrative&gt;&lt;ns3:subject&gt;Task: Create position request&lt;/ns3:subject&gt;&lt;ns3:enableAutoFlow&gt;false&lt;/ns3:enableAutoFlow&gt;&lt;ns3:enableCleanState&gt;false&lt;/ns3:enableCleanState&gt;&lt;ns3:activityPriority type="Priority"&gt;&lt;ns3:priority&gt;Normal&lt;/ns3:priority&gt;&lt;/ns3:activityPriority&gt;&lt;ns3:activityDueDate type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;1&lt;/ns3:dueDate&gt;&lt;ns3:timeZone type="TimeZone"&gt;&lt;ns3:value&gt;(use default)&lt;/ns3:value&gt;&lt;/ns3:timeZone&gt;&lt;/ns3:activityDueDate&gt;&lt;ns3:activityAssignmentType&gt;Lane&lt;/ns3:activityAssignmentType&gt;&lt;ns3:activityWorkSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timeScheduleName&gt;(use default)&lt;/ns3:timeScheduleName&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;ns3:holidayScheduleName&gt;(use default)&lt;/ns3:holidayScheduleName&gt;&lt;/ns3:activityWorkSchedule&gt;&lt;/ns3:userTaskSettings&gt;&lt;ns3:activityExtension conditional="false" /&gt;&lt;ns13:nodeVisualInfo x="196" y="27" width="95" height="70" color="#75AFFF" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523&lt;/ns15:outgoing&gt;&lt;ns15:dataInputAssociation&gt;&lt;ns15:targetRef&gt;2055.2412cf69-8dc4-42cb-8866-a4a4600477cb&lt;/ns15:targetRef&gt;&lt;ns15:assignment&gt;&lt;ns15:from xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="7692552a-ea18-49ce-bd93-a1dd62100cd9/12.db884a3c-c533-44b7-bb2d-47bec8ad4022"&gt;tw.system.process.instanceId&lt;/ns15:from&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataInputAssociation&gt;&lt;ns15:dataOutputAssociation&gt;&lt;ns15:sourceRef&gt;2055.d67415b6-660f-4877-8008-319aac20be13&lt;/ns15:sourceRef&gt;&lt;ns15:assignment&gt;&lt;ns15:to xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="/12.0b208895-bdb3-4e67-a402-af17a05858d2"&gt;tw.local.requisition&lt;/ns15:to&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataOutputAssociation&gt;&lt;ns15:dataOutputAssociation&gt;&lt;ns15:sourceRef&gt;2055.2f94f945-4e4e-4782-8a27-d9194dc99a91&lt;/ns15:sourceRef&gt;&lt;ns15:assignment&gt;&lt;ns15:to xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="/12.0ea493a3-08b7-4456-84be-443c8d41bc8b"&gt;tw.local.currentPosition&lt;/ns15:to&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataOutputAssociation&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:tActivityPerformer" distribution="LastUser" name="Lane"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:tActivityPerformer" distribution="LastUser" name="Team"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tPerformer" name="Expert" /&gt;&lt;/ns15:callActivity&gt;&lt;ns15:exclusiveGateway default="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513" gatewayDirection="Unspecified" name="New position?" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;&amp;#xD;
+&amp;lt;P&amp;gt;If the&amp;amp;nbsp;request to create a new position, it is routed to the general mnager for review. &amp;lt;/P&amp;gt;&amp;lt;BR&amp;gt;&amp;#xD;
+&amp;lt;P&amp;gt;If the request is to fill an existing position, it is routed directly to Human Resources to find&amp;amp;nbsp; candidates to fill the position. &amp;lt;/P&amp;gt;&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="334" y="46" width="32" height="32" color="#A5B7CD" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b&lt;/ns15:outgoing&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513&lt;/ns15:outgoing&gt;&lt;/ns15:exclusiveGateway&gt;&lt;ns15:exclusiveGateway default="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b" gatewayDirection="Unspecified" name="GM approved?" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;&amp;#xD;
+&amp;lt;P&amp;gt;If the General Manager approves the requisition, it is routed to Human Resources. &amp;lt;/P&amp;gt;&amp;lt;BR&amp;gt;&amp;#xD;
+&amp;lt;P&amp;gt;If the General Manager rejects the requisition, the hiring manager is notified of the rejection and the requisition is terminated.&amp;lt;BR&amp;gt;&amp;lt;/P&amp;gt;&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="431" y="51" width="32" height="32" color="#A5B7CD" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef&lt;/ns15:outgoing&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b&lt;/ns15:outgoing&gt;&lt;/ns15:exclusiveGateway&gt;&lt;ns15:callActivity calledElement="1.ebce2203-61fa-4f04-bbaf-612480e62f47" default="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f" name="Review new position request" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;The general manager evaluates the submitted new position request and either approves it or rejects it.&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns3:activityType&gt;UserTask&lt;/ns3:activityType&gt;&lt;ns3:userTaskSettings&gt;&lt;ns3:narrative&gt;Task: GM Approval&lt;/ns3:narrative&gt;&lt;ns3:subject&gt;Task: GM Approval&lt;/ns3:subject&gt;&lt;ns3:enableAutoFlow&gt;false&lt;/ns3:enableAutoFlow&gt;&lt;ns3:enableCleanState&gt;false&lt;/ns3:enableCleanState&gt;&lt;ns3:activityPriority type="Priority"&gt;&lt;ns3:priority&gt;Normal&lt;/ns3:priority&gt;&lt;/ns3:activityPriority&gt;&lt;ns3:activityDueDate type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;1&lt;/ns3:dueDate&gt;&lt;ns3:timeZone type="TimeZone"&gt;&lt;ns3:value&gt;(use default)&lt;/ns3:value&gt;&lt;/ns3:timeZone&gt;&lt;/ns3:activityDueDate&gt;&lt;ns3:activityAssignmentType&gt;Lane&lt;/ns3:activityAssignmentType&gt;&lt;ns3:activityWorkSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timeScheduleName&gt;(use default)&lt;/ns3:timeScheduleName&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;ns3:holidayScheduleName&gt;(use default)&lt;/ns3:holidayScheduleName&gt;&lt;/ns3:activityWorkSchedule&gt;&lt;/ns3:userTaskSettings&gt;&lt;ns3:activityExtension conditional="false" /&gt;&lt;ns13:nodeVisualInfo x="224" y="32" width="95" height="70" color="#CFA4CD" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f&lt;/ns15:outgoing&gt;&lt;ns15:dataInputAssociation&gt;&lt;ns15:targetRef&gt;2055.2916df68-b13e-40de-87f1-c91440510aec&lt;/ns15:targetRef&gt;&lt;ns15:assignment&gt;&lt;ns15:extensionElements&gt;&lt;ns3:useDefault&gt;true&lt;/ns3:useDefault&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:from xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="/12.0b208895-bdb3-4e67-a402-af17a05858d2"&gt;tw.local.requisition&lt;/ns15:from&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataInputAssociation&gt;&lt;ns15:dataInputAssociation&gt;&lt;ns15:targetRef&gt;2055.21a6ae0d-de1b-4993-8adb-8f7a29348777&lt;/ns15:targetRef&gt;&lt;ns15:assignment&gt;&lt;ns15:extensionElements&gt;&lt;ns3:useDefault&gt;true&lt;/ns3:useDefault&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:from xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="/12.0ea493a3-08b7-4456-84be-443c8d41bc8b"&gt;tw.local.currentPosition&lt;/ns15:from&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataInputAssociation&gt;&lt;ns15:dataOutputAssociation&gt;&lt;ns15:sourceRef&gt;2055.5404ca18-35f2-4539-8119-06617d9566e3&lt;/ns15:sourceRef&gt;&lt;ns15:assignment&gt;&lt;ns15:to xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="/12.0b208895-bdb3-4e67-a402-af17a05858d2"&gt;tw.local.requisition&lt;/ns15:to&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataOutputAssociation&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:tActivityPerformer" distribution="RoundRobin" name="Lane"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:tActivityPerformer" distribution="None" name="Team"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tPerformer" name="Expert" /&gt;&lt;/ns15:callActivity&gt;&lt;ns15:boundaryEvent cancelActivity="false" attachedToRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6" parallelMultiple="false" name="Overdue approval" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b2"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;If the general manager does not approve or reject the new position request by the due date, the general manager is notified.&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="212" y="73" width="24" height="24" color="#A5B7CD" /&gt;&lt;ns2:default&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b&lt;/ns2:default&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b&lt;/ns15:outgoing&gt;&lt;ns15:timerEventDefinition id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b1" eventImplId="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b0"&gt;&lt;ns15:extensionElements&gt;&lt;ns3:timerEventSettings&gt;&lt;ns3:dateType&gt;Now&lt;/ns3:dateType&gt;&lt;ns3:relativeDirection&gt;AfterStart&lt;/ns3:relativeDirection&gt;&lt;ns3:relativeTime&gt;1&lt;/ns3:relativeTime&gt;&lt;ns3:relativeTimeResolution&gt;Days&lt;/ns3:relativeTimeResolution&gt;&lt;ns3:toleranceInterval&gt;0&lt;/ns3:toleranceInterval&gt;&lt;ns3:toleranceIntervalResolution&gt;Hours&lt;/ns3:toleranceIntervalResolution&gt;&lt;ns3:useCalendar&gt;false&lt;/ns3:useCalendar&gt;&lt;/ns3:timerEventSettings&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:timerEventDefinition&gt;&lt;/ns15:boundaryEvent&gt;&lt;ns15:callActivity calledElement="1.eec0bb1f-0e1b-4253-9b5c-d3ed7b9d5de8" default="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545" name="Find position candidates" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;&amp;#xD;
+&amp;lt;P&amp;gt;When HR receives the position request, they search for candidates. &amp;lt;/P&amp;gt;&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns3:activityType&gt;UserTask&lt;/ns3:activityType&gt;&lt;ns3:userTaskSettings&gt;&lt;ns3:narrative&gt;Task: Find job candidates&lt;/ns3:narrative&gt;&lt;ns3:subject&gt;Task: Find job candidates&lt;/ns3:subject&gt;&lt;ns3:enableAutoFlow&gt;false&lt;/ns3:enableAutoFlow&gt;&lt;ns3:enableCleanState&gt;false&lt;/ns3:enableCleanState&gt;&lt;ns3:activityPriority type="Priority"&gt;&lt;ns3:priority&gt;Normal&lt;/ns3:priority&gt;&lt;/ns3:activityPriority&gt;&lt;ns3:activityDueDate type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;1&lt;/ns3:dueDate&gt;&lt;ns3:timeZone type="TimeZone"&gt;&lt;ns3:value&gt;(use default)&lt;/ns3:value&gt;&lt;/ns3:timeZone&gt;&lt;/ns3:activityDueDate&gt;&lt;ns3:activityAssignmentType&gt;Lane&lt;/ns3:activityAssignmentType&gt;&lt;ns3:activityWorkSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timeScheduleName&gt;(use default)&lt;/ns3:timeScheduleName&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;ns3:holidayScheduleName&gt;(use default)&lt;/ns3:holidayScheduleName&gt;&lt;/ns3:activityWorkSchedule&gt;&lt;/ns3:userTaskSettings&gt;&lt;ns3:activityExtension conditional="false" /&gt;&lt;ns13:nodeVisualInfo x="725" y="28" width="95" height="70" color="#FEEF77" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513&lt;/ns15:incoming&gt;&lt;ns15:incoming&gt;bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545&lt;/ns15:outgoing&gt;&lt;ns15:dataInputAssociation&gt;&lt;ns15:targetRef&gt;2055.6ed7412a-93f0-4c48-8f9e-de4a9297368f&lt;/ns15:targetRef&gt;&lt;ns15:assignment&gt;&lt;ns15:from xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="/12.0ea493a3-08b7-4456-84be-443c8d41bc8b"&gt;tw.local.currentPosition&lt;/ns15:from&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataInputAssociation&gt;&lt;ns15:dataOutputAssociation&gt;&lt;ns15:sourceRef&gt;2055.4c8fb418-0571-4e3d-819e-5c9c4763f125&lt;/ns15:sourceRef&gt;&lt;ns15:assignment&gt;&lt;ns15:to xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="/12.8dd11f26-194b-4ecb-8b4b-a779ffcbc57d"&gt;tw.local.candidates&lt;/ns15:to&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataOutputAssociation&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:tActivityPerformer" distribution="None" name="Lane"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns3:tActivityPerformer" distribution="None" name="Team"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tPerformer" name="Expert" /&gt;&lt;/ns15:callActivity&gt;&lt;ns15:scriptTask default="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb" name="Notify hiring manager" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;If the general manager rejects the new position request, the system notifies&amp;amp;nbsp;the hiring manager and the process ends. (This activity is not implemented in this sample.)&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns3:activityExtension conditional="false" /&gt;&lt;ns13:nodeVisualInfo x="532" y="35" width="95" height="70" color="#FFC875" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb&lt;/ns15:outgoing&gt;&lt;/ns15:scriptTask&gt;&lt;ns15:callActivity calledElement="1.254a0925-652c-4e75-a377-3b6528c69fb2" default="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509" name="Send escalation notice" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;If the general manager does not approve or reject the new position request by the due date, the&amp;amp;nbsp;system&amp;amp;nbsp;sends the general manager a notification email.(This activity is not implemented in this sample.)&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns3:activityType&gt;ServiceTask&lt;/ns3:activityType&gt;&lt;ns3:deleteTaskOnCompletion&gt;false&lt;/ns3:deleteTaskOnCompletion&gt;&lt;ns3:userTaskSettings&gt;&lt;ns3:enableAutoFlow&gt;false&lt;/ns3:enableAutoFlow&gt;&lt;ns3:enableCleanState&gt;false&lt;/ns3:enableCleanState&gt;&lt;ns3:activityPriority type="Priority"&gt;&lt;ns3:priority&gt;Normal&lt;/ns3:priority&gt;&lt;/ns3:activityPriority&gt;&lt;ns3:activityDueDate type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;0&lt;/ns3:dueDate&gt;&lt;ns3:timeZone type="TimeZone"&gt;&lt;ns3:value&gt;(use default)&lt;/ns3:value&gt;&lt;/ns3:timeZone&gt;&lt;/ns3:activityDueDate&gt;&lt;ns3:activityAssignmentType&gt;Lane&lt;/ns3:activityAssignmentType&gt;&lt;ns3:activityWorkSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timeScheduleName&gt;(use default)&lt;/ns3:timeScheduleName&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;ns3:holidayScheduleName&gt;(use default)&lt;/ns3:holidayScheduleName&gt;&lt;/ns3:activityWorkSchedule&gt;&lt;/ns3:userTaskSettings&gt;&lt;ns3:activityExtension conditional="false" /&gt;&lt;ns13:nodeVisualInfo x="157" y="58" width="95" height="70" color="#A5B7CD" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509&lt;/ns15:outgoing&gt;&lt;/ns15:callActivity&gt;&lt;ns15:endEvent name="End escalation" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-756b"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;&amp;#xD;
+&amp;lt;P&amp;gt;No additional escalation notices are sent. &amp;lt;/P&amp;gt;&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="328" y="81" width="24" height="24" color="#A5B7CD" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509&lt;/ns15:incoming&gt;&lt;/ns15:endEvent&gt;&lt;ns15:endEvent name="End" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564"&gt;&lt;ns15:documentation textFormat="text/html"&gt;&amp;lt;HTML&amp;gt;&amp;lt;HEAD&amp;gt;&amp;#xD;
+&amp;lt;STYLE type=text/css&amp;gt; p{margin:0px;}&amp;lt;/STYLE&amp;gt;&amp;#xD;
+&amp;lt;/HEAD&amp;gt;&amp;#xD;
+&amp;lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&amp;gt;The process is complete.&amp;lt;/BODY&amp;gt;&amp;lt;/HTML&amp;gt;&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="759" y="58" width="24" height="24" color="#A5B7CD" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545&lt;/ns15:incoming&gt;&lt;ns15:incoming&gt;bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb&lt;/ns15:incoming&gt;&lt;/ns15:endEvent&gt;&lt;ns15:dataObject itemSubjectRef="itm.12.0b208895-bdb3-4e67-a402-af17a05858d2" isCollection="false" name="requisition" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761e"&gt;&lt;ns15:documentation textFormat="text/plain"&gt;Is the process variable for the requisition business object.&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns2:defaultValue useDefault="true"&gt;var autoObject = new tw.object.Requisition();
+autoObject.instanceId = "";
+autoObject.gmComments = "";
+autoObject.gmApproval = false;
+autoObject.empNum = 0;
+autoObject.location = "";
+autoObject.department = "";
+autoObject.date = new TWDate();
+autoObject.approvalNeeded = false;
+autoObject.empType = "";
+autoObject.requester = "";
+autoObject.reqNum = "";
+autoObject
+&lt;/ns2:defaultValue&gt;&lt;ns3:searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7617" alias="HiringManager" path=".requester" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" /&gt;&lt;ns3:searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7616" alias="EmploymentStatus" path=".empType" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" /&gt;&lt;ns3:searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7615" alias="Department" path=".department" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" /&gt;&lt;ns3:searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7614" alias="Location" path=".location" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" /&gt;&lt;ns3:searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7613" alias="GMApproval" path=".gmApproval" type="12.83ff975e-8dbc-42e5-b738-fa8bc08274a2" /&gt;&lt;ns3:trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761c" sname="HiringManager" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" path=".requester" /&gt;&lt;ns3:trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761b" sname="EmploymentStatus" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" path=".empType" /&gt;&lt;ns3:trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761a" sname="Department" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" path=".department" /&gt;&lt;ns3:trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7619" sname="Location" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" path=".location" /&gt;&lt;ns3:trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7618" sname="GMApproval" type="12.db884a3c-c533-44b7-bb2d-47bec8ad4022" path=".gmApproval" /&gt;&lt;ns3:isProcessIdentifier&gt;false&lt;/ns3:isProcessIdentifier&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:dataObject&gt;&lt;ns15:dataObject itemSubjectRef="itm.12.0ea493a3-08b7-4456-84be-443c8d41bc8b" isCollection="false" name="currentPosition" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761d"&gt;&lt;ns15:documentation textFormat="text/plain"&gt;Is the process variable for the position business object for requisitions for existing positions.&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns2:defaultValue useDefault="true"&gt;var autoObject = new tw.object.Position();
+autoObject.iId = "";
+autoObject.jobTitle = "";
+autoObject.positionType = "";
+autoObject.replacement = new tw.object.Person();
+autoObject.replacement.notes = "";
+autoObject.replacement.payType = "";
+autoObject.replacement.payLevel = "";
+autoObject.replacement.startDate = new TWDate();
+autoObject.replacement.supervisor = "";
+autoObject.replacement.firstName = "";
+autoObject.replacement.lastName = "";
+autoObject
+&lt;/ns2:defaultValue&gt;&lt;ns3:isProcessIdentifier&gt;false&lt;/ns3:isProcessIdentifier&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:dataObject&gt;&lt;ns15:dataObject itemSubjectRef="itm.12.8dd11f26-194b-4ecb-8b4b-a779ffcbc57d" isCollection="true" name="candidates" id="bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7ff5"&gt;&lt;ns15:documentation textFormat="text/plain"&gt;Is the process variable that is a list of candidate business objects for prospective candidates for the position.&lt;/ns15:documentation&gt;&lt;ns15:extensionElements&gt;&lt;ns2:defaultValue useDefault="false" /&gt;&lt;ns3:isProcessIdentifier&gt;false&lt;/ns3:isProcessIdentifier&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:dataObject&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c" name="Rejected" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;bottomCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;true&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564" name="to End" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;bottomCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;topCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6" name="Yes - GM approval required" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;bottomCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;topCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;true&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:conditionExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression"&gt;tw.local.requisition	  ==	  "New"&lt;/ns15:conditionExpression&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8" name="to New position?" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9" name="No approval needed --&amp;gt; proceed to HR" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;topCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;true&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760e" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb" name="to Submit position request" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7" name="to GM approved?" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-756b" name="to End escalation" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9" name="Approved --&amp;gt; proceed to HR" id="bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;true&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:conditionExpression xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression"&gt;tw.local.requisition.gmApproval	  ==	  true	  &lt;/ns15:conditionExpression&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564" name="to End" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b2" targetRef="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576" name="Missed due date" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;leftCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;topCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;true&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:intermediateCatchEvent name="Intermediate Event" id="af21cc5f-8ab4-47be-8879-697b062ce829"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="572" y="94" width="24" height="24" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns3:ucaMessageEventDefinition id="38fc94b8-0485-4333-8ec4-82a5b8fec5a5" eventImplId="5eefcca7-d7e4-4c86-8a21-0de6faf6c2ae"&gt;&lt;ns3:attachedUCA /&gt;&lt;ns15:script /&gt;&lt;ns3:consumeMessage&gt;false&lt;/ns3:consumeMessage&gt;&lt;ns3:durableSubscription&gt;false&lt;/ns3:durableSubscription&gt;&lt;ns3:triggerTargetInSnapshotCtx&gt;false&lt;/ns3:triggerTargetInSnapshotCtx&gt;&lt;ns3:bpdEventId&gt;fd874257-5824-4e3a-8778-e6c5ca1c40aa&lt;/ns3:bpdEventId&gt;&lt;/ns3:ucaMessageEventDefinition&gt;&lt;/ns15:intermediateCatchEvent&gt;&lt;ns15:textAnnotation textFormat="text/plain" id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7620"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="7" y="110" width="216" height="63" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:text&gt;See the Documentation field for each activity and event for information about the artifact.&lt;/ns15:text&gt;&lt;/ns15:textAnnotation&gt;&lt;ns15:resourceRole name="participantRef"&gt;&lt;ns15:resourceRef&gt;24.da7e4d23-78cb-4483-98ed-b9c238308a03&lt;/ns15:resourceRef&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole name="businessDataParticipantRef"&gt;&lt;ns15:resourceRef&gt;24.da7e4d23-78cb-4483-98ed-b9c238308a03&lt;/ns15:resourceRef&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole name="perfMetricParticipantRef"&gt;&lt;ns15:resourceRef&gt;24.581a472b-5016-479a-b5b5-0a9701c2c42c&lt;/ns15:resourceRef&gt;&lt;/ns15:resourceRole&gt;&lt;ns15:resourceRole name="ownerTeamParticipantRef" /&gt;&lt;/ns15:process&gt;&lt;ns15:interface name="Standard HR Open New PositionInterface" id="_573fb08f-7030-49a8-977c-079de9ebc655" /&gt;&lt;/ns15:definitions&gt;
+</bpmn2Data>
+        <dependencySummary isNull="true" />
+        <jsonData>{"exporter":"http:\/\/www.ibm.com\/BPM","exporterVersion":"8.5.7","rootElement":[{"artifact":[{"extensionElements":{"nodeVisualInfo":[{"width":216,"x":7,"y":110,"declaredType":"TNodeVisualInfo","height":63}]},"declaredType":"textAnnotation","text":{"content":["See the Documentation field for each activity and event for information about the artifact."]},"id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7620","textFormat":"text\/plain"}],"flowElement":[{"parallelMultiple":false,"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503"],"isInterrupting":true,"extensionElements":{"default":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503"],"nodeVisualInfo":[{"color":"#A5B7CD","width":24,"x":18,"y":50,"declaredType":"TNodeVisualInfo","height":24}]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;The Standard HR Open New Position process begins.&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"Start","declaredType":"startEvent","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760e"},{"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523"],"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503"],"extensionElements":{"activityExtension":[{"conditional":false,"transactionalBehavior":"NotSet","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"}],"nodeVisualInfo":[{"color":"#75AFFF","width":95,"x":196,"y":27,"declaredType":"TNodeVisualInfo","height":70}],"userTaskSettings":[{"enableCleanState":false,"activityAssignmentType":"Lane","subject":"Task: Create position request","narrative":"Task: Create position request","enableAutoFlow":false,"activityWorkSchedule":{"timezoneType":0,"timeScheduleType":0,"timeScheduleName":"(use default)","holidayScheduleName":"(use default)","holidayScheduleType":0},"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUserTaskSettings","activityPriority":{"type":"Priority","priority":"Normal"},"activityDueDate":{"dueDate":{"unit":"Hours","value":"1","timeOfDay":"00:00"},"timeZone":{"type":"TimeZone","value":"(use default)"},"type":"TimeCalculation"}}],"activityType":["UserTask"]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;The hiring manager submits a request hire someone for a new or existing position.&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"declaredType":"callActivity","startQuantity":1,"resourceRole":[{"teamAssignmentType":"Reference","name":"Lane","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"LastUser","teamFilterService":{}},{"teamAssignmentType":"Reference","name":"Team","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"LastUser","teamFilterService":{}},{"name":"Expert","declaredType":"resourceRole"}],"default":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523","name":"Submit position request","dataInputAssociation":[{"targetRef":"2055.2412cf69-8dc4-42cb-8866-a4a4600477cb","assignment":[{"from":{"evaluatesToTypeRef":"7692552a-ea18-49ce-bd93-a1dd62100cd9\/12.db884a3c-c533-44b7-bb2d-47bec8ad4022","declaredType":"TFormalExpression","content":["tw.system.process.instanceId"]}}]}],"isForCompensation":false,"completionQuantity":1,"id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb","dataOutputAssociation":[{"assignment":[{"to":{"evaluatesToTypeRef":"\/12.0b208895-bdb3-4e67-a402-af17a05858d2","declaredType":"TFormalExpression","content":["tw.local.requisition"]}}],"sourceRef":["2055.d67415b6-660f-4877-8008-319aac20be13"]},{"assignment":[{"to":{"evaluatesToTypeRef":"\/12.0ea493a3-08b7-4456-84be-443c8d41bc8b","declaredType":"TFormalExpression","content":["tw.local.currentPosition"]}}],"sourceRef":["2055.2f94f945-4e4e-4782-8a27-d9194dc99a91"]}],"calledElement":"1.1bfbbe13-d8a5-4516-88b6-3d1f29f91af3"},{"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513"],"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523"],"default":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513","gatewayDirection":"Unspecified","extensionElements":{"nodeVisualInfo":[{"color":"#A5B7CD","width":32,"x":334,"y":46,"declaredType":"TNodeVisualInfo","height":32}]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;\r\n&lt;P&gt;If the&amp;nbsp;request to create a new position, it is routed to the general mnager for review. &lt;\/P&gt;&lt;BR&gt;\r\n&lt;P&gt;If the request is to fill an existing position, it is routed directly to Human Resources to find&amp;nbsp; candidates to fill the position. &lt;\/P&gt;&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"New position?","declaredType":"exclusiveGateway","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8"},{"outgoing":["bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b"],"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f"],"default":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b","gatewayDirection":"Unspecified","extensionElements":{"nodeVisualInfo":[{"color":"#A5B7CD","width":32,"x":431,"y":51,"declaredType":"TNodeVisualInfo","height":32}]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;\r\n&lt;P&gt;If the General Manager approves the requisition, it is routed to Human Resources. &lt;\/P&gt;&lt;BR&gt;\r\n&lt;P&gt;If the General Manager rejects the requisition, the hiring manager is notified of the rejection and the requisition is terminated.&lt;BR&gt;&lt;\/P&gt;&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"GM approved?","declaredType":"exclusiveGateway","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7"},{"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f"],"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b"],"extensionElements":{"activityExtension":[{"conditional":false,"transactionalBehavior":"NotSet","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"}],"nodeVisualInfo":[{"color":"#CFA4CD","width":95,"x":224,"y":32,"declaredType":"TNodeVisualInfo","height":70}],"userTaskSettings":[{"enableCleanState":false,"activityAssignmentType":"Lane","subject":"Task: GM Approval","narrative":"Task: GM Approval","enableAutoFlow":false,"activityWorkSchedule":{"timezoneType":0,"timeScheduleType":0,"timeScheduleName":"(use default)","holidayScheduleName":"(use default)","holidayScheduleType":0},"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUserTaskSettings","activityPriority":{"type":"Priority","priority":"Normal"},"activityDueDate":{"dueDate":{"unit":"Hours","value":"1","timeOfDay":"00:00"},"timeZone":{"type":"TimeZone","value":"(use default)"},"type":"TimeCalculation"}}],"activityType":["UserTask"]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;The general manager evaluates the submitted new position request and either approves it or rejects it.&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"declaredType":"callActivity","startQuantity":1,"resourceRole":[{"teamAssignmentType":"Reference","name":"Lane","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"RoundRobin","teamFilterService":{}},{"teamAssignmentType":"Reference","name":"Team","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"None","teamFilterService":{}},{"name":"Expert","declaredType":"resourceRole"}],"default":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f","name":"Review new position request","dataInputAssociation":[{"targetRef":"2055.2916df68-b13e-40de-87f1-c91440510aec","assignment":[{"extensionElements":{"useDefault":[true]},"from":{"evaluatesToTypeRef":"\/12.0b208895-bdb3-4e67-a402-af17a05858d2","declaredType":"TFormalExpression","content":["tw.local.requisition"]}}]},{"targetRef":"2055.21a6ae0d-de1b-4993-8adb-8f7a29348777","assignment":[{"extensionElements":{"useDefault":[true]},"from":{"evaluatesToTypeRef":"\/12.0ea493a3-08b7-4456-84be-443c8d41bc8b","declaredType":"TFormalExpression","content":["tw.local.currentPosition"]}}]}],"isForCompensation":false,"completionQuantity":1,"id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6","dataOutputAssociation":[{"assignment":[{"to":{"evaluatesToTypeRef":"\/12.0b208895-bdb3-4e67-a402-af17a05858d2","declaredType":"TFormalExpression","content":["tw.local.requisition"]}}],"sourceRef":["2055.5404ca18-35f2-4539-8119-06617d9566e3"]}],"calledElement":"1.ebce2203-61fa-4f04-bbaf-612480e62f47"},{"parallelMultiple":false,"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b"],"eventDefinition":[{"extensionElements":{"timerEventSettings":[{"relativeTime":"1","relativeTimeResolution":"Days","dateType":"Now","toleranceInterval":"0","useCalendar":false,"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TTimerEventSettings","toleranceIntervalResolution":"Hours","relativeDirection":"AfterStart"}]},"declaredType":"timerEventDefinition","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b1","otherAttributes":{"eventImplId":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b0"}}],"attachedToRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6","extensionElements":{"default":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b"],"nodeVisualInfo":[{"color":"#A5B7CD","width":24,"x":212,"y":73,"declaredType":"TNodeVisualInfo","height":24}]},"cancelActivity":false,"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;If the general manager does not approve or reject the new position request by the due date, the general manager is notified.&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"Overdue approval","declaredType":"boundaryEvent","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b2"},{"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545"],"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513","bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef"],"extensionElements":{"activityExtension":[{"conditional":false,"transactionalBehavior":"NotSet","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"}],"nodeVisualInfo":[{"color":"#FEEF77","width":95,"x":725,"y":28,"declaredType":"TNodeVisualInfo","height":70}],"userTaskSettings":[{"enableCleanState":false,"activityAssignmentType":"Lane","subject":"Task: Find job candidates","narrative":"Task: Find job candidates","enableAutoFlow":false,"activityWorkSchedule":{"timezoneType":0,"timeScheduleType":0,"timeScheduleName":"(use default)","holidayScheduleName":"(use default)","holidayScheduleType":0},"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUserTaskSettings","activityPriority":{"type":"Priority","priority":"Normal"},"activityDueDate":{"dueDate":{"unit":"Hours","value":"1","timeOfDay":"00:00"},"timeZone":{"type":"TimeZone","value":"(use default)"},"type":"TimeCalculation"}}],"activityType":["UserTask"]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;\r\n&lt;P&gt;When HR receives the position request, they search for candidates. &lt;\/P&gt;&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"declaredType":"callActivity","startQuantity":1,"resourceRole":[{"teamAssignmentType":"Reference","name":"Lane","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"None","teamFilterService":{}},{"teamAssignmentType":"Reference","name":"Team","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"None","teamFilterService":{}},{"name":"Expert","declaredType":"resourceRole"}],"default":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545","name":"Find position candidates","dataInputAssociation":[{"targetRef":"2055.6ed7412a-93f0-4c48-8f9e-de4a9297368f","assignment":[{"from":{"evaluatesToTypeRef":"\/12.0ea493a3-08b7-4456-84be-443c8d41bc8b","declaredType":"TFormalExpression","content":["tw.local.currentPosition"]}}]}],"isForCompensation":false,"completionQuantity":1,"id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9","dataOutputAssociation":[{"assignment":[{"to":{"evaluatesToTypeRef":"\/12.8dd11f26-194b-4ecb-8b4b-a779ffcbc57d","declaredType":"TFormalExpression","content":["tw.local.candidates"]}}],"sourceRef":["2055.4c8fb418-0571-4e3d-819e-5c9c4763f125"]}],"calledElement":"1.eec0bb1f-0e1b-4253-9b5c-d3ed7b9d5de8"},{"startQuantity":1,"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb"],"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b"],"default":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb","extensionElements":{"activityExtension":[{"conditional":false,"transactionalBehavior":"NotSet","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"}],"nodeVisualInfo":[{"color":"#FFC875","width":95,"x":532,"y":35,"declaredType":"TNodeVisualInfo","height":70}]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;If the general manager rejects the new position request, the system notifies&amp;nbsp;the hiring manager and the process ends. (This activity is not implemented in this sample.)&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"Notify hiring manager","isForCompensation":false,"completionQuantity":1,"declaredType":"scriptTask","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c"},{"startQuantity":1,"outgoing":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509"],"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b"],"default":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509","extensionElements":{"activityExtension":[{"conditional":false,"transactionalBehavior":"NotSet","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"}],"deleteTaskOnCompletion":[false],"nodeVisualInfo":[{"color":"#A5B7CD","width":95,"x":157,"y":58,"declaredType":"TNodeVisualInfo","height":70}],"userTaskSettings":[{"enableCleanState":false,"activityAssignmentType":"Lane","enableAutoFlow":false,"activityWorkSchedule":{"timezoneType":0,"timeScheduleType":0,"timeScheduleName":"(use default)","holidayScheduleName":"(use default)","holidayScheduleType":0},"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUserTaskSettings","activityPriority":{"type":"Priority","priority":"Normal"},"activityDueDate":{"dueDate":{"unit":"Hours","value":"0","timeOfDay":"00:00"},"timeZone":{"type":"TimeZone","value":"(use default)"},"type":"TimeCalculation"}}],"activityType":["ServiceTask"]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;If the general manager does not approve or reject the new position request by the due date, the&amp;nbsp;system&amp;nbsp;sends the general manager a notification email.(This activity is not implemented in this sample.)&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"Send escalation notice","isForCompensation":false,"completionQuantity":1,"declaredType":"callActivity","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576","calledElement":"1.254a0925-652c-4e75-a377-3b6528c69fb2"},{"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509"],"extensionElements":{"nodeVisualInfo":[{"color":"#A5B7CD","width":24,"x":328,"y":81,"declaredType":"TNodeVisualInfo","height":24}]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;\r\n&lt;P&gt;No additional escalation notices are sent. &lt;\/P&gt;&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"End escalation","declaredType":"endEvent","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-756b"},{"incoming":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb"],"extensionElements":{"nodeVisualInfo":[{"color":"#A5B7CD","width":24,"x":759,"y":58,"declaredType":"TNodeVisualInfo","height":24}]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;The process is complete.&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"End","declaredType":"endEvent","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564"},{"extensionElements":{"trackedField":[{"path":".requester","sname":"HiringManager","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TTrackedField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761c","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".empType","sname":"EmploymentStatus","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TTrackedField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761b","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".department","sname":"Department","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TTrackedField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761a","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".location","sname":"Location","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TTrackedField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7619","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".gmApproval","sname":"GMApproval","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TTrackedField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7618","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"}],"defaultValue":[{"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmext.TDefaultValue","useDefault":true,"value":"var autoObject = new tw.object.Requisition();\nautoObject.instanceId = \"\";\nautoObject.gmComments = \"\";\nautoObject.gmApproval = false;\nautoObject.empNum = 0;\nautoObject.location = \"\";\nautoObject.department = \"\";\nautoObject.date = new TWDate();\nautoObject.approvalNeeded = false;\nautoObject.empType = \"\";\nautoObject.requester = \"\";\nautoObject.reqNum = \"\";\nautoObject\n"}],"searchableField":[{"path":".requester","alias":"HiringManager","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSearchableField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7617","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".empType","alias":"EmploymentStatus","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSearchableField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7616","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".department","alias":"Department","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSearchableField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7615","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".location","alias":"Location","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSearchableField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7614","type":"12.db884a3c-c533-44b7-bb2d-47bec8ad4022"},{"path":".gmApproval","alias":"GMApproval","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TSearchableField","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7613","type":"12.83ff975e-8dbc-42e5-b738-fa8bc08274a2"}],"isProcessIdentifier":[false]},"itemSubjectRef":"itm.12.0b208895-bdb3-4e67-a402-af17a05858d2","documentation":[{"content":["Is the process variable for the requisition business object."],"textFormat":"text\/plain"}],"name":"requisition","isCollection":false,"declaredType":"dataObject","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761e"},{"extensionElements":{"defaultValue":[{"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmext.TDefaultValue","useDefault":true,"value":"var autoObject = new tw.object.Position();\nautoObject.iId = \"\";\nautoObject.jobTitle = \"\";\nautoObject.positionType = \"\";\nautoObject.replacement = new tw.object.Person();\nautoObject.replacement.notes = \"\";\nautoObject.replacement.payType = \"\";\nautoObject.replacement.payLevel = \"\";\nautoObject.replacement.startDate = new TWDate();\nautoObject.replacement.supervisor = \"\";\nautoObject.replacement.firstName = \"\";\nautoObject.replacement.lastName = \"\";\nautoObject\n"}],"isProcessIdentifier":[false]},"itemSubjectRef":"itm.12.0ea493a3-08b7-4456-84be-443c8d41bc8b","documentation":[{"content":["Is the process variable for the position business object for requisitions for existing positions."],"textFormat":"text\/plain"}],"name":"currentPosition","isCollection":false,"declaredType":"dataObject","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761d"},{"extensionElements":{"defaultValue":[{"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmext.TDefaultValue","useDefault":false,"value":""}],"isProcessIdentifier":[false]},"itemSubjectRef":"itm.12.8dd11f26-194b-4ecb-8b4b-a779ffcbc57d","documentation":[{"content":["Is the process variable that is a list of candidate business objects for prospective candidates for the position."],"textFormat":"text\/plain"}],"name":"candidates","isCollection":true,"declaredType":"dataObject","id":"bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7ff5"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"bottomCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":true}],"happySequence":[true]},"name":"Rejected","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"bottomCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"topCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"to End","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6","conditionExpression":{"declaredType":"TFormalExpression","content":["tw.local.requisition\t  ==\t  \"New\""]},"extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"bottomCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"topCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":true}],"happySequence":[true]},"name":"Yes - GM approval required","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"to New position?","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"topCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":true}],"happySequence":[true]},"name":"No approval needed --&gt; proceed to HR","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"to Submit position request","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760e"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"to GM approved?","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-756b","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"to End escalation","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9","conditionExpression":{"declaredType":"TFormalExpression","content":["tw.local.requisition.gmApproval\t  ==\t  true\t  "]},"extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":true}],"happySequence":[true]},"name":"Approved --&gt; proceed to HR","declaredType":"sequenceFlow","id":"bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"to End","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c"},{"targetRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"leftCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"topCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":true}],"happySequence":[true]},"name":"Missed due date","declaredType":"sequenceFlow","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b","sourceRef":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b2"},{"parallelMultiple":false,"eventDefinition":[{"triggerTargetInSnapshotCtx":false,"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUcaMessageEventDefinition","id":"38fc94b8-0485-4333-8ec4-82a5b8fec5a5","attachedUCA":"","otherAttributes":{"eventImplId":"5eefcca7-d7e4-4c86-8a21-0de6faf6c2ae"},"script":{},"consumeMessage":false,"durableSubscription":false,"bpdEventId":"fd874257-5824-4e3a-8778-e6c5ca1c40aa"}],"extensionElements":{"nodeVisualInfo":[{"width":24,"x":572,"y":94,"declaredType":"TNodeVisualInfo","height":24}]},"name":"Intermediate Event","declaredType":"intermediateCatchEvent","id":"af21cc5f-8ab4-47be-8879-697b062ce829"}],"laneSet":[{"id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761f","lane":[{"flowNodeRef":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760e","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7620","af21cc5f-8ab4-47be-8879-697b062ce829"],"extensionElements":{"nodeVisualInfo":[{"color":"#CCFFCC","width":3000,"x":0,"y":0,"declaredType":"TNodeVisualInfo","height":187}]},"name":"Hiring Manager","partitionElementRef":"24.cd97937f-06ab-43cc-8067-17dea489fdb3","declaredType":"lane","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7612","otherAttributes":{"{http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/bpmn\/ext\/process\/wle}isSystemLane":"false"}},{"flowNodeRef":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b2"],"extensionElements":{"nodeVisualInfo":[{"color":"#CCFFFF","width":3000,"x":0,"y":187,"declaredType":"TNodeVisualInfo","height":163}]},"name":"General Manager","partitionElementRef":"24.eb30156e-52c8-4ec5-9be6-02290d02f827","declaredType":"lane","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7611","otherAttributes":{"{http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/bpmn\/ext\/process\/wle}isSystemLane":"false"}},{"flowNodeRef":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9"],"extensionElements":{"nodeVisualInfo":[{"color":"#F8F8F8","width":3000,"x":0,"y":350,"declaredType":"TNodeVisualInfo","height":154}]},"name":"Human Resources","partitionElementRef":"24.6615a4b0-fd38-4ea5-8bc0-69d2f107369e","declaredType":"lane","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7610","otherAttributes":{"{http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/bpmn\/ext\/process\/wle}isSystemLane":"false"}},{"flowNodeRef":["bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-756b","bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564"],"extensionElements":{"nodeVisualInfo":[{"color":"#ffffff","width":3000,"x":0,"y":504,"declaredType":"TNodeVisualInfo","height":140}]},"name":"System","partitionElementRef":"24.6fd38d02-81cf-48ab-bd42-8ff4c0a1628b","declaredType":"lane","id":"bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760f","otherAttributes":{"{http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/bpmn\/ext\/process\/wle}isSystemLane":"true"}}]}],"resourceRole":[{"resourceRef":"24.da7e4d23-78cb-4483-98ed-b9c238308a03","name":"participantRef","declaredType":"resourceRole"},{"resourceRef":"24.da7e4d23-78cb-4483-98ed-b9c238308a03","name":"businessDataParticipantRef","declaredType":"resourceRole"},{"resourceRef":"24.581a472b-5016-479a-b5b5-0a9701c2c42c","name":"perfMetricParticipantRef","declaredType":"resourceRole"},{"name":"ownerTeamParticipantRef","declaredType":"resourceRole"}],"isClosed":false,"extensionElements":{"bpdExtension":[{"allowContentOperations":true,"enableTracking":true,"workSchedule":{"timezoneType":0,"timeScheduleType":0,"holidayScheduleType":0},"instanceName":"\"Standard Employee Requisition for \" + (tw.local.requisition != null ? tw.local.requisition.requester : \"\") + \" (\" + tw.system.process.name + \")\"","bpdOwnerInstanceUI":{},"dueDateSettings":{"dueDate":{"unit":"Hours","value":"4","timeOfDay":"00:00"},"type":"TimeCalculation"},"autoTrackingName":"aEmpRequisition121381434563922","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TBPDExtension","optimizeExecForLatency":false,"defaultInstanceUI":{},"dueDateEnabled":true,"atRiskCalcEnabled":true,"allowProjectedPathManagement":true,"autoTrackingEnabled":true,"sboSyncEnabled":false}],"isConvergedProcess":[true],"caseExtension":[{"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmcaseext.TCaseExtension","caseFolder":{"allowSubfoldersCreation":false,"allowLocalDoc":false,"id":"b27c8ab3-fc47-41c7-b89f-740940f5a8a1","allowExternalFolder":false,"allowExternalDoc":false}}]},"documentation":[{"content":["&lt;HTML&gt;&lt;HEAD&gt;\r\n&lt;STYLE type=text\/css&gt; p{margin:0px;}&lt;\/STYLE&gt;\r\n&lt;\/HEAD&gt;\r\n&lt;BODY style=\"FONT-FAMILY: arial; FONT-SIZE: 10pt\" bgColor=#f5f5f5&gt;This process covers a manager requesting to create a new position or fill an existing position. The process routes the position request to&amp;nbsp;the Human Resources (HR) department to search for&amp;nbsp;candidates.&lt;\/BODY&gt;&lt;\/HTML&gt;"],"textFormat":"text\/html"}],"name":"Standard HR Open New Position","declaredType":"process","id":"25.c904b3b1-afc1-4698-bf5a-a20892c20275","processType":"None","ioSpecification":{}},{"name":"Standard HR Open New PositionInterface","declaredType":"interface","id":"_573fb08f-7030-49a8-977c-079de9ebc655"}],"targetNamespace":"","typeLanguage":"http:\/\/www.w3.org\/2001\/XMLSchema","expressionLanguage":"http:\/\/www.w3.org\/1999\/XPath","id":"4171d231-10cc-4b65-ab3c-97c0c771d12a"}</jsonData>
+        <migrationData isNull="true" />
+        <rwfData isNull="true" />
+        <rwfStatus isNull="true" />
+        <templateId isNull="true" />
+        <externalId isNull="true" />
+        <guid>19b73424-1bdc-4ee4-aa5a-f4ed8784d4a8</guid>
+        <versionId>5b2b3fc3-da2c-4a24-b843-ee8fba5f79d5</versionId>
+        <field1 isNull="true" />
+        <field2 isNull="true" />
+        <field3>0</field3>
+        <field4 isNull="true" />
+        <field5>false</field5>
+        <clobField1 isNull="true" />
+        <blobField1 isNull="true" />
+        <BusinessProcessDiagram id="bpdid:c55c96e4881d57c3:-508075a8:185c043bbe4:-7d5c">
+            <metadata>
+                <entry>
+                    <key>SAP_META.SHOULDRECOVER</key>
+                    <value>no</value>
+                </entry>
+                <entry>
+                    <key>SHOULDRECOVER</key>
+                    <value>no</value>
+                </entry>
+                <entry>
+                    <key>SAP_META.ERROR</key>
+                    <value>true</value>
+                </entry>
+            </metadata>
+            <name>Standard HR Open New Position</name>
+            <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;This process covers a manager requesting to create a new position or fill an existing position. The process routes the position request to&amp;nbsp;the Human Resources (HR) department to search for&amp;nbsp;candidates.&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+            <name>Standard HR Open New Position</name>
+            <dimension>
+                <size w="600" h="150" />
+            </dimension>
+            <author>trghat581</author>
+            <isTrackingEnabled>true</isTrackingEnabled>
+            <isCriticalPathEnabled>true</isCriticalPathEnabled>
+            <isSpcEnabled>false</isSpcEnabled>
+            <isDueDateEnabled>true</isDueDateEnabled>
+            <isAtRiskCalcEnabled>true</isAtRiskCalcEnabled>
+            <creationDate>1198188701609</creationDate>
+            <modificationDate>1683106639634</modificationDate>
+            <participantRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.da7e4d23-78cb-4483-98ed-b9c238308a03</participantRef>
+            <businessDataParticipantRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.da7e4d23-78cb-4483-98ed-b9c238308a03</businessDataParticipantRef>
+            <perfMetricParticipantRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.581a472b-5016-479a-b5b5-0a9701c2c42c</perfMetricParticipantRef>
+            <metricSettings itemType="2" />
+            <currentSimulationScenarioId>
+                <BpmnObjectId id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7621" />
+            </currentSimulationScenarioId>
+            <instanceNameExpression>"Standard Employee Requisition for " + (tw.local.requisition != null ? tw.local.requisition.requester : "") + " (" + tw.system.process.name + ")"</instanceNameExpression>
+            <dueDateType>1</dueDateType>
+            <dueDateTime>4</dueDateTime>
+            <dueDateTimeResolution>1</dueDateTimeResolution>
+            <dueDateTimeTOD>00:00</dueDateTimeTOD>
+            <dueDateCustom></dueDateCustom>
+            <officeIntegration>
+                <sharePointParentSiteDisabled>true</sharePointParentSiteDisabled>
+                <sharePointParentSiteName>&lt;#= tw.system.process.name #&gt;</sharePointParentSiteName>
+                <sharePointParentSiteTemplate>ParentSiteTemplate.stp</sharePointParentSiteTemplate>
+                <sharePointWorkspaceSiteName>&lt;#= tw.system.process.name #&gt; &lt;#= tw.system.process.instanceId #&gt;</sharePointWorkspaceSiteName>
+                <sharePointWorkspaceSiteDescription>This site has been automatically generated for managing collaborations and documents 
+for the Lombardi TeamWorks process instance: &lt;#= tw.system.process.name #&gt; &lt;#= tw.system.process.instanceId #&gt;
+
+TeamWorks Link:  ~APPSERVER_URL~/portal/jsp/getProcessDetails.do?bpdInstanceId=&lt;#= tw.system.process.instanceId #&gt;
+
+</sharePointWorkspaceSiteDescription>
+                <sharePointWorkspaceSiteTemplate>WorkspaceSiteTemplate.stp</sharePointWorkspaceSiteTemplate>
+                <sharePointLCID>1033</sharePointLCID>
+            </officeIntegration>
+            <timeScheduleType>0</timeScheduleType>
+            <holidayScheduleType>0</holidayScheduleType>
+            <timezoneType>0</timezoneType>
+            <executionProfile>default</executionProfile>
+            <isSBOSyncEnabled>false</isSBOSyncEnabled>
+            <allowContentOperations>true</allowContentOperations>
+            <isLegacyCaseMigrated>false</isLegacyCaseMigrated>
+            <hasCaseObjectParams>false</hasCaseObjectParams>
+            <defaultPool>
+                <BpmnObjectId id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761f" />
+            </defaultPool>
+            <defaultInstanceUI id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff5" />
+            <ownerTeamInstanceUI id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff6" />
+            <simulationScenario id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7623">
+                <name>Default</name>
+                <simNumInstances>100</simNumInstances>
+                <simMinutesBetween>30</simMinutesBetween>
+                <maxInstances>100</maxInstances>
+                <useMaxInstances>true</useMaxInstances>
+                <continueFromReal>false</continueFromReal>
+                <useParticipantCalendars>false</useParticipantCalendars>
+                <useDuration>false</useDuration>
+                <duration>86400</duration>
+                <startTime>1198188714187</startTime>
+                <startEventId>
+                    <BpmnObjectId id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7622" />
+                </startEventId>
+            </simulationScenario>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b" connectionType="SequenceFlow">
+                <name>Missed due date</name>
+                <documentation></documentation>
+                <nameVisible>true</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff8" />
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545" connectionType="SequenceFlow">
+                <name>to End</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff9" />
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b" connectionType="SequenceFlow">
+                <name>Yes - GM approval required</name>
+                <documentation></documentation>
+                <nameVisible>true</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe5">
+                        <expression>tw.local.requisition	  ==	  "New"</expression>
+                    </condition>
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523" connectionType="SequenceFlow">
+                <name>to New position?</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ffa" />
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b" connectionType="SequenceFlow">
+                <name>Rejected</name>
+                <documentation></documentation>
+                <nameVisible>true</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ffb" />
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503" connectionType="SequenceFlow">
+                <name>to Submit position request</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ffc" />
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f" connectionType="SequenceFlow">
+                <name>to GM approved?</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ffd" />
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513" connectionType="SequenceFlow">
+                <name>No approval needed --&gt; proceed to HR</name>
+                <documentation></documentation>
+                <nameVisible>true</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ffe" />
+                </connection>
+            </flow>
+            <flow id="bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef" connectionType="SequenceFlow">
+                <name>Approved --&gt; proceed to HR</name>
+                <documentation></documentation>
+                <nameVisible>true</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff0">
+                        <expression>tw.local.requisition.gmApproval	  ==	  true	  </expression>
+                    </condition>
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509" connectionType="SequenceFlow">
+                <name>to End escalation</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fff" />
+                </connection>
+            </flow>
+            <flow id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb" connectionType="SequenceFlow">
+                <name>to End</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:2000" />
+                </connection>
+            </flow>
+            <pool id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761f">
+                <name>Pool</name>
+                <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;This process covers a manager requesting to create a new position or fill an existing position. The process routes the position request to&amp;nbsp;the Human Resources (HR) department to search for&amp;nbsp;candidates.&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                <restrictedName>aEmpRequisition121381434563922</restrictedName>
+                <dimension>
+                    <size w="3000" h="654" />
+                </dimension>
+                <autoTrackingEnabled>true</autoTrackingEnabled>
+                <lane id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7612">
+                    <name>Hiring Manager</name>
+                    <height>187</height>
+                    <laneColor>4</laneColor>
+                    <systemLane>false</systemLane>
+                    <attachedParticipant>/24.cd97937f-06ab-43cc-8067-17dea489fdb3</attachedParticipant>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75fb" componentType="Activity">
+                        <name>Submit position request</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;The hiring manager submits a request hire someone for a new or existing position.&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="196" y="27" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#75AFFF</colorInput>
+                        <component>
+                            <loopType>0</loopType>
+                            <loopMaximum>1</loopMaximum>
+                            <startQuantity>1</startQuantity>
+                            <isAutoflowable>false</isAutoflowable>
+                            <MIOrdering>1</MIOrdering>
+                            <MIFlowCondition>0</MIFlowCondition>
+                            <cancelRemainingInstances>false</cancelRemainingInstances>
+                            <metricSettings itemType="4" />
+                            <implementationType>1</implementationType>
+                            <isConditional>false</isConditional>
+                            <bpmnTaskType>1</bpmnTaskType>
+                            <activityOptionType>REQUIRED</activityOptionType>
+                            <activityExecutionType>NONE</activityExecutionType>
+                            <activityExecutionTypePreviousValue>AUTOMATIC</activityExecutionTypePreviousValue>
+                            <isHidden>false</isHidden>
+                            <isRepeatable>false</isRepeatable>
+                            <narrative>Task: Create position request</narrative>
+                            <transactionalBehavior>0</transactionalBehavior>
+                            <isRobotTask>false</isRobotTask>
+                            <implementation>
+                                <attachedActivityId>/1.1bfbbe13-d8a5-4516-88b6-3d1f29f91af3</attachedActivityId>
+                                <sendToType>1</sendToType>
+                                <taskRouting>3</taskRouting>
+                                <dueDateType>1</dueDateType>
+                                <dueDateTime>1</dueDateTime>
+                                <dueDateTimeResolution>1</dueDateTimeResolution>
+                                <dueDateTimeTOD>00:00</dueDateTimeTOD>
+                                <priorityType>0</priorityType>
+                                <priority>30.30</priority>
+                                <subject>Task: Create position request</subject>
+                                <narrative>Task: Create position request</narrative>
+                                <forceSend>true</forceSend>
+                                <timeSchedule>(use default)</timeSchedule>
+                                <timeScheduleType>0</timeScheduleType>
+                                <timeZone>(use default)</timeZone>
+                                <timeZoneType>0</timeZoneType>
+                                <holidaySchedule>(use default)</holidaySchedule>
+                                <holidayScheduleType>0</holidayScheduleType>
+                                <inputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fc8">
+                                    <name>instanceId</name>
+                                    <classId>7692552a-ea18-49ce-bd93-a1dd62100cd9/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+                                    <input>true</input>
+                                    <value>tw.system.process.instanceId</value>
+                                    <parameterId>2055.2412cf69-8dc4-42cb-8866-a4a4600477cb</parameterId>
+                                </inputActivityParameterMapping>
+                                <outputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fc9">
+                                    <name>requisition</name>
+                                    <classId>/12.0b208895-bdb3-4e67-a402-af17a05858d2</classId>
+                                    <value>tw.local.requisition</value>
+                                    <parameterId>2055.d67415b6-660f-4877-8008-319aac20be13</parameterId>
+                                </outputActivityParameterMapping>
+                                <outputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fca">
+                                    <name>currentPosition</name>
+                                    <classId>/12.0ea493a3-08b7-4456-84be-443c8d41bc8b</classId>
+                                    <value>tw.local.currentPosition</value>
+                                    <parameterId>2055.2f94f945-4e4e-4782-8a27-d9194dc99a91</parameterId>
+                                </outputActivityParameterMapping>
+                                <laneFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fcb">
+                                    <serviceType>1</serviceType>
+                                    <teamRef>/24.cd97937f-06ab-43cc-8067-17dea489fdb3</teamRef>
+                                </laneFilter>
+                                <teamFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fcc">
+                                    <serviceType>1</serviceType>
+                                </teamFilter>
+                            </implementation>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fea">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe6">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523" />
+                        </outputPort>
+                    </flowObject>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760e" componentType="Event">
+                        <name>Start</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;The Standard HR Open New Position process begins.&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="18" y="50" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <eventType>1</eventType>
+                            <cancelActivity>true</cancelActivity>
+                            <repeatable>false</repeatable>
+                            <doCloseTask>true</doCloseTask>
+                        </component>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe9">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7503" />
+                        </outputPort>
+                    </flowObject>
+                    <flowObject id="af21cc5f-8ab4-47be-8879-697b062ce829" componentType="Event">
+                        <name>Intermediate Event</name>
+                        <documentation></documentation>
+                        <position>
+                            <location x="572" y="94" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <eventType>3</eventType>
+                            <cancelActivity>true</cancelActivity>
+                            <repeatable>false</repeatable>
+                            <doCloseTask>true</doCloseTask>
+                            <EventAction id="38fc94b8-0485-4333-8ec4-82a5b8fec5a5">
+                                <actionType>1</actionType>
+                                <actionSubType>0</actionSubType>
+                                <EventActionImplementation id="5eefcca7-d7e4-4c86-8a21-0de6faf6c2ae">
+                                    <durableSubscription>false</durableSubscription>
+                                    <correlationParameterId>2055.46ab33d6-3cf8-4cd3-bb72-8258fbc340c6</correlationParameterId>
+                                    <triggeringMechanism>0</triggeringMechanism>
+                                </EventActionImplementation>
+                            </EventAction>
+                        </component>
+                    </flowObject>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d8" componentType="Gateway">
+                        <name>New position?</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;If the&amp;nbsp;request to create a new position, it is routed to the general mnager for review. &lt;/P&gt;&lt;BR&gt;&#xD;
+&lt;P&gt;If the request is to fill an existing position, it is routed directly to Human Resources to find&amp;nbsp; candidates to fill the position. &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="334" y="46" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <gatewayType>1</gatewayType>
+                            <splitJoinType>0</splitJoinType>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe7">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7523" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe2">
+                            <positionId>bottomCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b" />
+                        </outputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe3">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513" />
+                        </outputPort>
+                    </flowObject>
+                </lane>
+                <lane id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7611">
+                    <name>General Manager</name>
+                    <height>163</height>
+                    <laneColor>5</laneColor>
+                    <systemLane>false</systemLane>
+                    <attachedParticipant>/24.eb30156e-52c8-4ec5-9be6-02290d02f827</attachedParticipant>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d6" componentType="Activity">
+                        <name>Review new position request</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;The general manager evaluates the submitted new position request and either approves it or rejects it.&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="224" y="32" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#CFA4CD</colorInput>
+                        <component>
+                            <loopType>0</loopType>
+                            <loopMaximum>1</loopMaximum>
+                            <startQuantity>1</startQuantity>
+                            <isAutoflowable>false</isAutoflowable>
+                            <MIOrdering>1</MIOrdering>
+                            <MIFlowCondition>0</MIFlowCondition>
+                            <cancelRemainingInstances>false</cancelRemainingInstances>
+                            <metricSettings itemType="4" />
+                            <implementationType>1</implementationType>
+                            <isConditional>false</isConditional>
+                            <bpmnTaskType>1</bpmnTaskType>
+                            <activityOptionType>REQUIRED</activityOptionType>
+                            <activityExecutionType>NONE</activityExecutionType>
+                            <activityExecutionTypePreviousValue>AUTOMATIC</activityExecutionTypePreviousValue>
+                            <isHidden>false</isHidden>
+                            <isRepeatable>false</isRepeatable>
+                            <narrative>Task: GM Approval</narrative>
+                            <transactionalBehavior>0</transactionalBehavior>
+                            <isRobotTask>false</isRobotTask>
+                            <implementation>
+                                <attachedActivityId>/1.ebce2203-61fa-4f04-bbaf-612480e62f47</attachedActivityId>
+                                <sendToType>1</sendToType>
+                                <taskRouting>2</taskRouting>
+                                <dueDateType>1</dueDateType>
+                                <dueDateTime>1</dueDateTime>
+                                <dueDateTimeResolution>1</dueDateTimeResolution>
+                                <dueDateTimeTOD>00:00</dueDateTimeTOD>
+                                <priorityType>0</priorityType>
+                                <priority>30.30</priority>
+                                <subject>Task: GM Approval</subject>
+                                <narrative>Task: GM Approval</narrative>
+                                <forceSend>true</forceSend>
+                                <timeSchedule>(use default)</timeSchedule>
+                                <timeScheduleType>0</timeScheduleType>
+                                <timeZone>(use default)</timeZone>
+                                <timeZoneType>0</timeZoneType>
+                                <holidaySchedule>(use default)</holidaySchedule>
+                                <holidayScheduleType>0</holidayScheduleType>
+                                <inputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fce">
+                                    <name>requisition</name>
+                                    <classId>/12.0b208895-bdb3-4e67-a402-af17a05858d2</classId>
+                                    <input>true</input>
+                                    <useDefault>true</useDefault>
+                                    <value>tw.local.requisition</value>
+                                    <parameterId>2055.2916df68-b13e-40de-87f1-c91440510aec</parameterId>
+                                </inputActivityParameterMapping>
+                                <inputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fcf">
+                                    <name>currentPosition</name>
+                                    <classId>/12.0ea493a3-08b7-4456-84be-443c8d41bc8b</classId>
+                                    <input>true</input>
+                                    <useDefault>true</useDefault>
+                                    <value>tw.local.currentPosition</value>
+                                    <parameterId>2055.21a6ae0d-de1b-4993-8adb-8f7a29348777</parameterId>
+                                </inputActivityParameterMapping>
+                                <outputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fd0">
+                                    <name>requisition</name>
+                                    <classId>/12.0b208895-bdb3-4e67-a402-af17a05858d2</classId>
+                                    <value>tw.local.requisition</value>
+                                    <parameterId>2055.5404ca18-35f2-4539-8119-06617d9566e3</parameterId>
+                                </outputActivityParameterMapping>
+                                <laneFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fd1">
+                                    <serviceType>1</serviceType>
+                                    <teamRef>/24.eb30156e-52c8-4ec5-9be6-02290d02f827</teamRef>
+                                </laneFilter>
+                                <teamFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fd2">
+                                    <serviceType>1</serviceType>
+                                </teamFilter>
+                            </implementation>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe4">
+                            <positionId>topCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-751b" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1feb">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f" />
+                        </outputPort>
+                        <attachedEvent id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b2" componentType="Event">
+                            <name>Overdue approval</name>
+                            <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;If the general manager does not approve or reject the new position request by the due date, the general manager is notified.&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                            <position>
+                                <location x="0" y="0" />
+                            </position>
+                            <positionId>leftBottom</positionId>
+                            <dropIconUrl>0</dropIconUrl>
+                            <colorInput>Color</colorInput>
+                            <component>
+                                <nameVisible>true</nameVisible>
+                                <eventType>3</eventType>
+                                <cancelActivity>true</cancelActivity>
+                                <repeatable>false</repeatable>
+                                <doCloseTask>false</doCloseTask>
+                                <EventAction id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b1">
+                                    <actionType>2</actionType>
+                                    <actionSubType>0</actionSubType>
+                                    <EventActionImplementation id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75b0">
+                                        <dateType>0</dateType>
+                                        <relativeDirection>1</relativeDirection>
+                                        <relativeTime>1</relativeTime>
+                                        <relativeTimeResolution>2</relativeTimeResolution>
+                                        <toleranceInterval>0</toleranceInterval>
+                                        <toleranceIntervalResolution>1</toleranceIntervalResolution>
+                                        <UseCalendar>false</UseCalendar>
+                                    </EventActionImplementation>
+                                </EventAction>
+                            </component>
+                            <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff3">
+                                <positionId>leftCenter</positionId>
+                                <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b" />
+                            </outputPort>
+                        </attachedEvent>
+                    </flowObject>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75d7" componentType="Gateway">
+                        <name>GM approved?</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;If the General Manager approves the requisition, it is routed to Human Resources. &lt;/P&gt;&lt;BR&gt;&#xD;
+&lt;P&gt;If the General Manager rejects the requisition, the hiring manager is notified of the rejection and the requisition is terminated.&lt;BR&gt;&lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="431" y="51" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <gatewayType>1</gatewayType>
+                            <splitJoinType>0</splitJoinType>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fec">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-753f" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fdd">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef" />
+                        </outputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fde">
+                            <positionId>bottomCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b" />
+                        </outputPort>
+                    </flowObject>
+                </lane>
+                <lane id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7610">
+                    <name>Human Resources</name>
+                    <height>154</height>
+                    <laneColor>0</laneColor>
+                    <systemLane>false</systemLane>
+                    <attachedParticipant>/24.6615a4b0-fd38-4ea5-8bc0-69d2f107369e</attachedParticipant>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-75a9" componentType="Activity">
+                        <name>Find position candidates</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;When HR receives the position request, they search for candidates. &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="725" y="28" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#FEEF77</colorInput>
+                        <component>
+                            <loopType>0</loopType>
+                            <loopMaximum>1</loopMaximum>
+                            <startQuantity>1</startQuantity>
+                            <isAutoflowable>false</isAutoflowable>
+                            <MIOrdering>1</MIOrdering>
+                            <MIFlowCondition>0</MIFlowCondition>
+                            <cancelRemainingInstances>false</cancelRemainingInstances>
+                            <metricSettings itemType="4" />
+                            <implementationType>1</implementationType>
+                            <isConditional>false</isConditional>
+                            <bpmnTaskType>1</bpmnTaskType>
+                            <activityOptionType>REQUIRED</activityOptionType>
+                            <activityExecutionType>NONE</activityExecutionType>
+                            <activityExecutionTypePreviousValue>AUTOMATIC</activityExecutionTypePreviousValue>
+                            <isHidden>false</isHidden>
+                            <isRepeatable>false</isRepeatable>
+                            <narrative>Task: Find job candidates</narrative>
+                            <transactionalBehavior>0</transactionalBehavior>
+                            <isRobotTask>false</isRobotTask>
+                            <implementation>
+                                <attachedActivityId>/1.eec0bb1f-0e1b-4253-9b5c-d3ed7b9d5de8</attachedActivityId>
+                                <sendToType>1</sendToType>
+                                <taskRouting>0</taskRouting>
+                                <dueDateType>1</dueDateType>
+                                <dueDateTime>1</dueDateTime>
+                                <dueDateTimeResolution>1</dueDateTimeResolution>
+                                <dueDateTimeTOD>00:00</dueDateTimeTOD>
+                                <priorityType>0</priorityType>
+                                <priority>30.30</priority>
+                                <subject>Task: Find job candidates</subject>
+                                <narrative>Task: Find job candidates</narrative>
+                                <forceSend>true</forceSend>
+                                <timeSchedule>(use default)</timeSchedule>
+                                <timeScheduleType>0</timeScheduleType>
+                                <timeZone>(use default)</timeZone>
+                                <timeZoneType>0</timeZoneType>
+                                <holidaySchedule>(use default)</holidaySchedule>
+                                <holidayScheduleType>0</holidayScheduleType>
+                                <inputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fd4">
+                                    <name>currentPosition</name>
+                                    <classId>/12.0ea493a3-08b7-4456-84be-443c8d41bc8b</classId>
+                                    <input>true</input>
+                                    <value>tw.local.currentPosition</value>
+                                    <parameterId>2055.6ed7412a-93f0-4c48-8f9e-de4a9297368f</parameterId>
+                                </inputActivityParameterMapping>
+                                <outputActivityParameterMapping id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fd5">
+                                    <name>candidates</name>
+                                    <classId>/12.8dd11f26-194b-4ecb-8b4b-a779ffcbc57d</classId>
+                                    <array>true</array>
+                                    <value>tw.local.candidates</value>
+                                    <parameterId>2055.4c8fb418-0571-4e3d-819e-5c9c4763f125</parameterId>
+                                </outputActivityParameterMapping>
+                                <laneFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fd6">
+                                    <serviceType>1</serviceType>
+                                    <teamRef>/24.6615a4b0-fd38-4ea5-8bc0-69d2f107369e</teamRef>
+                                </laneFilter>
+                                <teamFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fd7">
+                                    <serviceType>1</serviceType>
+                                </teamFilter>
+                            </implementation>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe8">
+                            <positionId>topCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7513" />
+                        </inputPort>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fef">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7fef" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe0">
+                            <positionId>bottomCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545" />
+                        </outputPort>
+                    </flowObject>
+                </lane>
+                <lane id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-760f">
+                    <name>System</name>
+                    <height>150</height>
+                    <laneColor>0</laneColor>
+                    <systemLane>true</systemLane>
+                    <attachedParticipant>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.6fd38d02-81cf-48ab-bd42-8ff4c0a1628b</attachedParticipant>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-758c" componentType="Activity">
+                        <name>Notify hiring manager</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;If the general manager rejects the new position request, the system notifies&amp;nbsp;the hiring manager and the process ends. (This activity is not implemented in this sample.)&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="532" y="35" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#FFC875</colorInput>
+                        <component>
+                            <loopType>0</loopType>
+                            <loopMaximum>1</loopMaximum>
+                            <startQuantity>1</startQuantity>
+                            <isAutoflowable>false</isAutoflowable>
+                            <MIOrdering>1</MIOrdering>
+                            <MIFlowCondition>0</MIFlowCondition>
+                            <cancelRemainingInstances>false</cancelRemainingInstances>
+                            <metricSettings itemType="4" />
+                            <implementationType>3</implementationType>
+                            <isConditional>false</isConditional>
+                            <bpmnTaskType>4</bpmnTaskType>
+                            <activityOptionType>REQUIRED</activityOptionType>
+                            <activityExecutionType>NONE</activityExecutionType>
+                            <activityExecutionTypePreviousValue>AUTOMATIC</activityExecutionTypePreviousValue>
+                            <isHidden>false</isHidden>
+                            <isRepeatable>false</isRepeatable>
+                            <transactionalBehavior>0</transactionalBehavior>
+                            <isRobotTask>false</isRobotTask>
+                            <implementation />
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fdf">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-752b" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff1">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb" />
+                        </outputPort>
+                    </flowObject>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7576" componentType="Activity">
+                        <name>Send escalation notice</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;If the general manager does not approve or reject the new position request by the due date, the&amp;nbsp;system&amp;nbsp;sends the general manager a notification email.(This activity is not implemented in this sample.)&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="157" y="58" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <loopType>0</loopType>
+                            <loopMaximum>1</loopMaximum>
+                            <startQuantity>1</startQuantity>
+                            <isAutoflowable>false</isAutoflowable>
+                            <MIOrdering>1</MIOrdering>
+                            <MIFlowCondition>0</MIFlowCondition>
+                            <cancelRemainingInstances>false</cancelRemainingInstances>
+                            <metricSettings itemType="4" />
+                            <implementationType>1</implementationType>
+                            <isConditional>false</isConditional>
+                            <bpmnTaskType>3</bpmnTaskType>
+                            <activityOptionType>REQUIRED</activityOptionType>
+                            <activityExecutionType>NONE</activityExecutionType>
+                            <activityExecutionTypePreviousValue>AUTOMATIC</activityExecutionTypePreviousValue>
+                            <isHidden>false</isHidden>
+                            <isRepeatable>false</isRepeatable>
+                            <transactionalBehavior>0</transactionalBehavior>
+                            <isRobotTask>false</isRobotTask>
+                            <implementation>
+                                <attachedActivityId>7692552a-ea18-49ce-bd93-a1dd62100cd9/1.254a0925-652c-4e75-a377-3b6528c69fb2</attachedActivityId>
+                                <sendToType>1</sendToType>
+                                <taskRouting>0</taskRouting>
+                                <dueDateType>1</dueDateType>
+                                <dueDateTime>0</dueDateTime>
+                                <dueDateTimeResolution>1</dueDateTimeResolution>
+                                <dueDateTimeTOD>00:00</dueDateTimeTOD>
+                                <priorityType>0</priorityType>
+                                <priority>30.30</priority>
+                                <forceSend>true</forceSend>
+                                <timeSchedule>(use default)</timeSchedule>
+                                <timeScheduleType>0</timeScheduleType>
+                                <timeZone>(use default)</timeZone>
+                                <timeZoneType>0</timeZoneType>
+                                <holidaySchedule>(use default)</holidaySchedule>
+                                <holidayScheduleType>0</holidayScheduleType>
+                            </implementation>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff4">
+                            <positionId>topCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-754b" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fed">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509" />
+                        </outputPort>
+                    </flowObject>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-756b" componentType="Event">
+                        <name>End escalation</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;&#xD;
+&lt;P&gt;No additional escalation notices are sent. &lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="328" y="81" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <eventType>2</eventType>
+                            <cancelActivity>true</cancelActivity>
+                            <repeatable>false</repeatable>
+                            <doCloseTask>true</doCloseTask>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fee">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7509" />
+                        </inputPort>
+                    </flowObject>
+                    <flowObject id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7564" componentType="Event">
+                        <name>End</name>
+                        <documentation>&lt;HTML&gt;&lt;HEAD&gt;&#xD;
+&lt;STYLE type=text/css&gt; p{margin:0px;}&lt;/STYLE&gt;&#xD;
+&lt;/HEAD&gt;&#xD;
+&lt;BODY style="FONT-FAMILY: arial; FONT-SIZE: 10pt" bgColor=#f5f5f5&gt;The process is complete.&lt;/BODY&gt;&lt;/HTML&gt;</documentation>
+                        <position>
+                            <location x="759" y="58" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <eventType>2</eventType>
+                            <cancelActivity>true</cancelActivity>
+                            <repeatable>false</repeatable>
+                            <doCloseTask>true</doCloseTask>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fe1">
+                            <positionId>topCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7545" />
+                        </inputPort>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff2">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-74fb" />
+                        </inputPort>
+                    </flowObject>
+                </lane>
+                <privateVariable id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761e">
+                    <name>requisition</name>
+                    <description>&lt;html&gt;&lt;body&gt;Is the process variable for the requisition business object.&lt;/body&gt;&lt;/html&gt;</description>
+                    <classId>/12.0b208895-bdb3-4e67-a402-af17a05858d2</classId>
+                    <arrayOf>false</arrayOf>
+                    <hasDefault>true</hasDefault>
+                    <defaultValue>var autoObject = new tw.object.Requisition();
+autoObject.instanceId = "";
+autoObject.gmComments = "";
+autoObject.gmApproval = false;
+autoObject.empNum = 0;
+autoObject.location = "";
+autoObject.department = "";
+autoObject.date = new TWDate();
+autoObject.approvalNeeded = false;
+autoObject.empType = "";
+autoObject.requester = "";
+autoObject.reqNum = "";
+autoObject
+</defaultValue>
+                    <visibleInSearch>false</visibleInSearch>
+                    <isProcessInstanceCorrelator>false</isProcessInstanceCorrelator>
+                    <isSharedContext>false</isSharedContext>
+                </privateVariable>
+                <privateVariable id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761d">
+                    <name>currentPosition</name>
+                    <description>&lt;html&gt;&lt;body&gt;Is the process variable for the position business object for requisitions for existing positions.&lt;/body&gt;&lt;/html&gt;</description>
+                    <classId>/12.0ea493a3-08b7-4456-84be-443c8d41bc8b</classId>
+                    <arrayOf>false</arrayOf>
+                    <hasDefault>true</hasDefault>
+                    <defaultValue>var autoObject = new tw.object.Position();
+autoObject.iId = "";
+autoObject.jobTitle = "";
+autoObject.positionType = "";
+autoObject.replacement = new tw.object.Person();
+autoObject.replacement.notes = "";
+autoObject.replacement.payType = "";
+autoObject.replacement.payLevel = "";
+autoObject.replacement.startDate = new TWDate();
+autoObject.replacement.supervisor = "";
+autoObject.replacement.firstName = "";
+autoObject.replacement.lastName = "";
+autoObject
+</defaultValue>
+                    <visibleInSearch>false</visibleInSearch>
+                    <isProcessInstanceCorrelator>false</isProcessInstanceCorrelator>
+                    <isSharedContext>false</isSharedContext>
+                </privateVariable>
+                <privateVariable id="bpdid:284d4670de5ed150:6ad42ae4:14de497801a:-7ff5">
+                    <name>candidates</name>
+                    <description>&lt;html&gt;&lt;body&gt;Is the process variable that is a list of candidate business objects for prospective candidates for the position.&lt;/body&gt;&lt;/html&gt;</description>
+                    <classId>/12.8dd11f26-194b-4ecb-8b4b-a779ffcbc57d</classId>
+                    <arrayOf>true</arrayOf>
+                    <hasDefault>false</hasDefault>
+                    <defaultValue></defaultValue>
+                    <visibleInSearch>false</visibleInSearch>
+                    <isProcessInstanceCorrelator>false</isProcessInstanceCorrelator>
+                    <isSharedContext>false</isSharedContext>
+                </privateVariable>
+                <trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761c">
+                    <name>HiringManager</name>
+                    <type>0</type>
+                    <expression id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fbd">
+                        <expression>tw.local.requisition.requester</expression>
+                    </expression>
+                </trackedField>
+                <trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761b">
+                    <name>EmploymentStatus</name>
+                    <type>0</type>
+                    <expression id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fbf">
+                        <expression>tw.local.requisition.empType</expression>
+                    </expression>
+                </trackedField>
+                <trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-761a">
+                    <name>Department</name>
+                    <type>0</type>
+                    <expression id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fc1">
+                        <expression>tw.local.requisition.department</expression>
+                    </expression>
+                </trackedField>
+                <trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7619">
+                    <name>Location</name>
+                    <type>0</type>
+                    <expression id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fc3">
+                        <expression>tw.local.requisition.location</expression>
+                    </expression>
+                </trackedField>
+                <trackedField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7618">
+                    <name>GMApproval</name>
+                    <type>0</type>
+                    <expression id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1fc5">
+                        <expression>tw.local.requisition.gmApproval</expression>
+                    </expression>
+                </trackedField>
+                <searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7617">
+                    <name>HiringManager</name>
+                    <type>2</type>
+                    <expression id="bpdid:e8661f5643b4ffc7:764b27cb:1880af457f8:2fea">
+                        <expression>tw.local.requisition.requester</expression>
+                    </expression>
+                </searchableField>
+                <searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7616">
+                    <name>EmploymentStatus</name>
+                    <type>2</type>
+                    <expression id="bpdid:e8661f5643b4ffc7:764b27cb:1880af457f8:2feb">
+                        <expression>tw.local.requisition.empType</expression>
+                    </expression>
+                </searchableField>
+                <searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7615">
+                    <name>Department</name>
+                    <type>2</type>
+                    <expression id="bpdid:e8661f5643b4ffc7:764b27cb:1880af457f8:2fec">
+                        <expression>tw.local.requisition.department</expression>
+                    </expression>
+                </searchableField>
+                <searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7614">
+                    <name>Location</name>
+                    <type>2</type>
+                    <expression id="bpdid:e8661f5643b4ffc7:764b27cb:1880af457f8:2fed">
+                        <expression>tw.local.requisition.location</expression>
+                    </expression>
+                </searchableField>
+                <searchableField id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7613">
+                    <name>GMApproval</name>
+                    <type>1</type>
+                    <expression id="bpdid:e8661f5643b4ffc7:764b27cb:1880af457f8:2fee">
+                        <expression>tw.local.requisition.gmApproval</expression>
+                    </expression>
+                </searchableField>
+            </pool>
+            <note id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7620">
+                <name></name>
+                <documentation>See the Documentation field for each activity and event for information about the artifact.</documentation>
+                <position>
+                    <location x="7" y="110" />
+                </position>
+                <dimension>
+                    <size w="216" h="63" />
+                </dimension>
+                <laneObjectId>
+                    <BpmnObjectId id="bpdid:431b0753c33842e2:3d5457c0:141a2fd3448:-7612" />
+                </laneObjectId>
+            </note>
+            <extension id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e0b7826d:1ff7" type="CASE">
+                <caseFolder id="b27c8ab3-fc47-41c7-b89f-740940f5a8a1">
+                    <allowLocalDoc>false</allowLocalDoc>
+                    <allowExternalDoc>false</allowExternalDoc>
+                    <allowSubfoldersCreation>false</allowSubfoldersCreation>
+                    <allowExternalFolder>false</allowExternalFolder>
+                </caseFolder>
+            </extension>
+        </BusinessProcessDiagram>
+    </bpd>
+</teamworks>
+

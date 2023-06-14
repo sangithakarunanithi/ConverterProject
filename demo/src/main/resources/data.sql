@@ -1,0 +1,22 @@
+--
+--CREATE TABLE CONVERTER (
+--id	integer,
+--name varchar(20),
+--top_level_node	varchar(200),
+--node_type	varchar(200),
+--file_type	varchar(200),
+--paths	varchar(200),
+--value	varchar(200),
+--content_type varchar(200),
+--processing_steps	varchar(200),
+--platform	varchar(200),
+--status	varchar(200),
+--properties_id	varchar(200),
+--parent_id	integer
+--)
+--
+----drop table CONVERTER;
+--
+--
+--
+--select * from converter;

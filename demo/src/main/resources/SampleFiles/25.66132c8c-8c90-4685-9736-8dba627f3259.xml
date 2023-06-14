@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamworks>
+    <bpd id="25.66132c8c-8c90-4685-9736-8dba627f3259" name="Process">
+        <bpdParameter name="input1">
+            <lastModified isNull="true" />
+            <lastModifiedBy isNull="true" />
+            <tenantId isNull="true" />
+            <bpdParameterId>2007.199f9bdc-cc52-4508-87bb-84042b872060</bpdParameterId>
+            <bpdId>25.66132c8c-8c90-4685-9736-8dba627f3259</bpdId>
+            <parameterType>1</parameterType>
+            <isArrayOf>false</isArrayOf>
+            <classId>7692552a-ea18-49ce-bd93-a1dd62100cd9/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+            <seq>0</seq>
+            <documentation></documentation>
+            <hasDefault>false</hasDefault>
+            <defaultValue isNull="true" />
+            <isReadOnly>false</isReadOnly>
+            <guid>guid:4ad8a5e1-e75f-4e61-9011-10c5456dc828</guid>
+            <versionId>698f4f2f-80fa-4967-bf94-b02588596e29</versionId>
+        </bpdParameter>
+        <lastModified>1683193379278</lastModified>
+        <lastModifiedBy>trghat581</lastModifiedBy>
+        <tenantId isNull="true" />
+        <bpdId>25.66132c8c-8c90-4685-9736-8dba627f3259</bpdId>
+        <isTrackingEnabled>true</isTrackingEnabled>
+        <isSpcEnabled>false</isSpcEnabled>
+        <restrictedName isNull="true" />
+        <isCriticalPathEnabled>false</isCriticalPathEnabled>
+        <participantRef isNull="true" />
+        <businessDataParticipantRef isNull="true" />
+        <perfMetricParticipantRef isNull="true" />
+        <ownerTeamParticipantRef isNull="true" />
+        <timeScheduleType isNull="true" />
+        <timeScheduleName isNull="true" />
+        <timeScheduleExpression isNull="true" />
+        <holidayScheduleType isNull="true" />
+        <holidayScheduleName isNull="true" />
+        <holidayScheduleExpression isNull="true" />
+        <timezoneType isNull="true" />
+        <timezone isNull="true" />
+        <timezoneExpression isNull="true" />
+        <internalName isNull="true" />
+        <description></description>
+        <type>1</type>
+        <rootBpdId isNull="true" />
+        <parentBpdId isNull="true" />
+        <parentFlowObjectId isNull="true" />
+        <xmlData isNull="true" />
+        <bpmn2Data>&lt;ns15:definitions xmlns:ns15="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process" xmlns:ns3="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/wle" xmlns:ns4="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/case" xmlns:ns5="http://www.ibm.com/bpm/Extensions" xmlns:ns6="http://www.ibm.com/xmlns/prod/bpm/uca" xmlns:ns7="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/team" xmlns:ns8="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/trackinggroup" xmlns:ns9="http://www.ibm.com/xmlns/bpmnx/20100524/v1/BusinessVocabulary" xmlns:ns10="http://www.omg.org/spec/DD/20100524/DI" xmlns:ns11="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns12="http://www.omg.org/spec/BPMN/20100524/BPMNDI" xmlns:ns13="http://www.ibm.com/xmlns/prod/bpm/graph" xmlns:ns14="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/extservice" xmlns:ns16="http://www.ibm.com/bpm/processappsettings" xmlns:ns17="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process/auth" xmlns:ns18="http://www.ibm.com/bpm/CoachDesignerNG" xmlns:ns19="http://www.ibm.com/xmlns/links" xmlns:ns20="http://www.ibm.com/bpm/uitheme" xmlns:ns21="http://www.ibm.com/bpm/coachview" xmlns:ns22="http://www.ibm.com/xmlns/tagging" id="0678868f-c045-421a-b63a-3ee3f64ca735" targetNamespace="" expressionLanguage="http://www.ibm.com/xmlns/prod/bpm/expression-lang/javascript"&gt;&lt;ns15:process name="Process" id="25.66132c8c-8c90-4685-9736-8dba627f3259" ns2:executionMode="longRunning"&gt;&lt;ns15:documentation /&gt;&lt;ns15:extensionElements&gt;&lt;ns3:bpdExtension instanceName="&amp;quot;Process:&amp;quot; + tw.system.process.instanceId" dueDateEnabled="true" atRiskCalcEnabled="true" enableTracking="true" allowProjectedPathManagement="false" optimizeExecForLatency="false" sBOSyncEnabled="true" allowContentOperations="false" autoTrackingEnabled="true" autoTrackingName="at1682405244211"&gt;&lt;ns3:dueDateSettings type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;8&lt;/ns3:dueDate&gt;&lt;/ns3:dueDateSettings&gt;&lt;ns3:workSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;/ns3:workSchedule&gt;&lt;/ns3:bpdExtension&gt;&lt;ns4:caseExtension&gt;&lt;ns4:caseFolder id="085e5d25-0574-4862-8268-6cfe58198c26" /&gt;&lt;/ns4:caseExtension&gt;&lt;ns4:isConvergedProcess&gt;true&lt;/ns4:isConvergedProcess&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:ioSpecification&gt;&lt;ns15:dataInput name="input1" itemSubjectRef="itm.12.db884a3c-c533-44b7-bb2d-47bec8ad4022" isCollection="false" id="2007.199f9bdc-cc52-4508-87bb-84042b872060" /&gt;&lt;ns15:inputSet /&gt;&lt;ns15:inputSet id="_2fccc075-387f-438b-ac1e-09be50f13641" /&gt;&lt;ns15:outputSet /&gt;&lt;ns15:outputSet id="_d8b0578d-ec74-40f2-a771-2a33e7ed11fd" /&gt;&lt;/ns15:ioSpecification&gt;&lt;ns15:laneSet id="1447295d-eb75-4d88-a86f-23325a097342"&gt;&lt;ns15:lane name="All Users" partitionElementRef="24.da7e4d23-78cb-4483-98ed-b9c238308a03" id="b49a5ac0-b16f-40a7-a2f4-42ce0de54a5f" ns3:isSystemLane="false"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="0" y="0" width="3000" height="200" color="#F8F8F8" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:flowNodeRef&gt;7c4e50f8-945b-4152-b658-e7e3e86c39eb&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;fa58d257-fb40-48a7-a185-d016454bd27a&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;308810b8-9662-4923-9643-3a3f984ac5da&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;2f479909-432e-45b2-83f8-a3df35f08dea&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;f325cea8-e0dc-4e14-8cdb-1f9e7e89d685&lt;/ns15:flowNodeRef&gt;&lt;ns15:flowNodeRef&gt;779872fd-7be3-469c-8970-bfcabcb6d45c&lt;/ns15:flowNodeRef&gt;&lt;/ns15:lane&gt;&lt;ns15:lane name="System" partitionElementRef="24.6fd38d02-81cf-48ab-bd42-8ff4c0a1628b" id="41f40a8c-b3c3-4a35-b46c-720dad61486f" ns3:isSystemLane="true"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="0" y="201" width="3000" height="200" color="#F8F8F8" /&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:lane&gt;&lt;/ns15:laneSet&gt;&lt;ns15:startEvent name="Start" id="7c4e50f8-945b-4152-b658-e7e3e86c39eb"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="25" y="80" width="24" height="24" color="#F8F8F8" /&gt;&lt;ns2:default&gt;bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09&lt;/ns2:default&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:outgoing&gt;bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09&lt;/ns15:outgoing&gt;&lt;/ns15:startEvent&gt;&lt;ns15:endEvent name="End" id="fa58d257-fb40-48a7-a185-d016454bd27a"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="650" y="80" width="24" height="24" color="#F8F8F8" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b&lt;/ns15:incoming&gt;&lt;/ns15:endEvent&gt;&lt;ns15:callActivity calledElement="1.f77964bf-2a32-4c46-8906-f2a2c68324b8" default="3c75a81c-6970-4e52-851a-c26b8ad507b7" name="Inline User Task" id="308810b8-9662-4923-9643-3a3f984ac5da"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="202" y="51" width="95" height="70" /&gt;&lt;ns3:activityType&gt;InlineUserTask&lt;/ns3:activityType&gt;&lt;ns3:activityExtension conditional="false" transactionalBehavior="NotSet"&gt;&lt;ns3:conditionScript /&gt;&lt;/ns3:activityExtension&gt;&lt;ns3:userTaskSettings&gt;&lt;ns3:activityPriority type="Priority"&gt;&lt;ns3:priority&gt;Normal&lt;/ns3:priority&gt;&lt;/ns3:activityPriority&gt;&lt;ns3:activityDueDate type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;1&lt;/ns3:dueDate&gt;&lt;ns3:timeZone type="TimeZone"&gt;&lt;ns3:value&gt;(use default)&lt;/ns3:value&gt;&lt;/ns3:timeZone&gt;&lt;/ns3:activityDueDate&gt;&lt;ns3:activityAssignmentType&gt;Lane&lt;/ns3:activityAssignmentType&gt;&lt;ns3:activityWorkSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;/ns3:activityWorkSchedule&gt;&lt;/ns3:userTaskSettings&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;3c75a81c-6970-4e52-851a-c26b8ad507b7&lt;/ns15:outgoing&gt;&lt;ns3:activityPerformer distribution="None" name="Lane"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns3:activityPerformer&gt;&lt;ns3:activityPerformer distribution="None" name="Team"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns3:activityPerformer&gt;&lt;ns15:performer name="Expert" /&gt;&lt;/ns15:callActivity&gt;&lt;ns15:sequenceFlow sourceRef="7c4e50f8-945b-4152-b658-e7e3e86c39eb" targetRef="308810b8-9662-4923-9643-3a3f984ac5da" name="To Inline User Task" id="bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:sequenceFlow sourceRef="308810b8-9662-4923-9643-3a3f984ac5da" targetRef="f325cea8-e0dc-4e14-8cdb-1f9e7e89d685" name="To Inline User Task 1" id="3c75a81c-6970-4e52-851a-c26b8ad507b7"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;true&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;ns2:sequenceFlowImplementation sboSyncEnabled="true" fireValidation="Never" /&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:dataObject itemSubjectRef="itm.12.db884a3c-c533-44b7-bb2d-47bec8ad4022" isCollection="false" name="variable1" id="32af5a8d-92a7-4c6a-8138-1362dad810b2" /&gt;&lt;ns15:intermediateCatchEvent name="Intermediate Event" id="2f479909-432e-45b2-83f8-a3df35f08dea"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="481" y="57" width="24" height="24" /&gt;&lt;ns2:default&gt;35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b&lt;/ns2:default&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;84d4664d-28d6-47a5-827c-bfdca394f792&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b&lt;/ns15:outgoing&gt;&lt;ns3:trackingEventDefinition id="3fe8260b-d457-4086-842f-499f04e0e3e9" eventImplId="b96b36eb-c5f0-427f-8714-20b7569be368"&gt;&lt;ns3:trackingPoint trackingGroupRef="14.a1cb553b-0057-4463-ab3a-04a81b4a855e" externalUniqueId="34a85e8a-9416-4fec-87a7-336e42176d83"&gt;&lt;ns15:dataInputAssociation&gt;&lt;ns15:targetRef&gt;17.b919b4dd-b22b-4308-8d62-3f8c84b8eff7&lt;/ns15:targetRef&gt;&lt;ns15:assignment&gt;&lt;ns15:from xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns15:tFormalExpression" evaluatesToTypeRef="itm.12.db884a3c-c533-44b7-bb2d-47bec8ad4022"&gt;tw.local.variable1&lt;/ns15:from&gt;&lt;/ns15:assignment&gt;&lt;/ns15:dataInputAssociation&gt;&lt;/ns3:trackingPoint&gt;&lt;/ns3:trackingEventDefinition&gt;&lt;/ns15:intermediateCatchEvent&gt;&lt;ns15:sequenceFlow sourceRef="2f479909-432e-45b2-83f8-a3df35f08dea" targetRef="fa58d257-fb40-48a7-a185-d016454bd27a" name="To End" id="35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b"&gt;&lt;ns15:extensionElements&gt;&lt;ns2:sequenceFlowImplementation sboSyncEnabled="true" /&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;bottomCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;leftCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;true&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:callActivity calledElement="1.64f0bfcd-9273-4ee7-a521-9bc9209f57ff" default="84d4664d-28d6-47a5-827c-bfdca394f792" name="Inline User Task 1" id="f325cea8-e0dc-4e14-8cdb-1f9e7e89d685"&gt;&lt;ns15:extensionElements&gt;&lt;ns3:activityExtension conditional="false"&gt;&lt;ns3:conditionScript /&gt;&lt;/ns3:activityExtension&gt;&lt;ns13:nodeVisualInfo x="345" y="50" width="95" height="70" /&gt;&lt;ns3:userTaskSettings&gt;&lt;ns3:activityPriority type="Priority"&gt;&lt;ns3:priority&gt;Normal&lt;/ns3:priority&gt;&lt;/ns3:activityPriority&gt;&lt;ns3:activityDueDate type="TimeCalculation"&gt;&lt;ns3:dueDate unit="Hours" timeOfDay="00:00"&gt;1&lt;/ns3:dueDate&gt;&lt;ns3:timeZone type="TimeZone"&gt;&lt;ns3:value&gt;(use default)&lt;/ns3:value&gt;&lt;/ns3:timeZone&gt;&lt;/ns3:activityDueDate&gt;&lt;ns3:activityAssignmentType&gt;Lane&lt;/ns3:activityAssignmentType&gt;&lt;ns3:activityWorkSchedule&gt;&lt;ns3:timeScheduleType&gt;0&lt;/ns3:timeScheduleType&gt;&lt;ns3:timezoneType&gt;0&lt;/ns3:timezoneType&gt;&lt;ns3:holidayScheduleType&gt;0&lt;/ns3:holidayScheduleType&gt;&lt;/ns3:activityWorkSchedule&gt;&lt;/ns3:userTaskSettings&gt;&lt;ns3:activityType&gt;ServiceTask&lt;/ns3:activityType&gt;&lt;ns3:deleteTaskOnCompletion&gt;false&lt;/ns3:deleteTaskOnCompletion&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:incoming&gt;3c75a81c-6970-4e52-851a-c26b8ad507b7&lt;/ns15:incoming&gt;&lt;ns15:outgoing&gt;84d4664d-28d6-47a5-827c-bfdca394f792&lt;/ns15:outgoing&gt;&lt;ns3:activityPerformer distribution="None" name="Lane"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns3:activityPerformer&gt;&lt;ns3:activityPerformer distribution="None" name="Team"&gt;&lt;ns3:teamFilterService /&gt;&lt;/ns3:activityPerformer&gt;&lt;ns15:performer name="Expert" /&gt;&lt;/ns15:callActivity&gt;&lt;ns15:sequenceFlow sourceRef="f325cea8-e0dc-4e14-8cdb-1f9e7e89d685" targetRef="2f479909-432e-45b2-83f8-a3df35f08dea" name="To Intermediate Event" id="84d4664d-28d6-47a5-827c-bfdca394f792"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:linkVisualInfo&gt;&lt;ns13:sourcePortLocation&gt;rightCenter&lt;/ns13:sourcePortLocation&gt;&lt;ns13:targetPortLocation&gt;topCenter&lt;/ns13:targetPortLocation&gt;&lt;ns13:showLabel&gt;false&lt;/ns13:showLabel&gt;&lt;ns13:showCoachControlLabel&gt;false&lt;/ns13:showCoachControlLabel&gt;&lt;ns13:labelPosition&gt;0.0&lt;/ns13:labelPosition&gt;&lt;ns13:saveExecutionContext&gt;false&lt;/ns13:saveExecutionContext&gt;&lt;/ns13:linkVisualInfo&gt;&lt;ns2:happySequence&gt;true&lt;/ns2:happySequence&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:sequenceFlow&gt;&lt;ns15:boundaryEvent cancelActivity="true" attachedToRef="f325cea8-e0dc-4e14-8cdb-1f9e7e89d685" parallelMultiple="false" name="Error" id="779872fd-7be3-469c-8970-bfcabcb6d45c"&gt;&lt;ns15:extensionElements&gt;&lt;ns13:nodeVisualInfo x="380" y="108" width="24" height="24" /&gt;&lt;/ns15:extensionElements&gt;&lt;ns15:dataOutput name="error" itemSubjectRef="itm.19e8dc33-1100-46be-89a6-36c9040f7b3e" isCollection="false" id="0fc964b4-1399-4141-8424-6a5072d5bcaa" /&gt;&lt;ns15:outputSet /&gt;&lt;ns15:errorEventDefinition id="9b5ced92-fa98-419a-84d0-ca2a7db111e7" eventImplId="2554ae58-f58e-4b5a-8b45-f537427059f9"&gt;&lt;ns15:extensionElements&gt;&lt;ns3:errorEventSettings&gt;&lt;ns3:catchAll&gt;true&lt;/ns3:catchAll&gt;&lt;/ns3:errorEventSettings&gt;&lt;/ns15:extensionElements&gt;&lt;/ns15:errorEventDefinition&gt;&lt;/ns15:boundaryEvent&gt;&lt;ns15:resourceRole name="participantRef" /&gt;&lt;ns15:resourceRole name="businessDataParticipantRef" /&gt;&lt;ns15:resourceRole name="perfMetricParticipantRef" /&gt;&lt;ns15:resourceRole name="ownerTeamParticipantRef" /&gt;&lt;/ns15:process&gt;&lt;ns15:interface name="ProcessInterface" id="_85ef5e49-2eda-484e-a56b-ed8dcee364e3" /&gt;&lt;ns15:globalUserTask name="1.f77964bf-2a32-4c46-8906-f2a2c68324b8" id="1.f77964bf-2a32-4c46-8906-f2a2c68324b8"&gt;&lt;ns15:ioSpecification&gt;&lt;ns15:inputSet id="4770ecd5-91ab-40d6-9262-6977c4ab782a" /&gt;&lt;ns15:outputSet id="97210159-f346-44da-bfad-a2172178a9ad" /&gt;&lt;/ns15:ioSpecification&gt;&lt;/ns15:globalUserTask&gt;&lt;/ns15:definitions&gt;
+</bpmn2Data>
+        <dependencySummary>&lt;dependencySummary id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-469d"&gt;
+  &lt;artifactReference id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-469c"&gt;
+    &lt;refId&gt;/1.f77964bf-2a32-4c46-8906-f2a2c68324b8&lt;/refId&gt;
+    &lt;refType&gt;1&lt;/refType&gt;
+    &lt;nameValuePair id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-469b"&gt;
+      &lt;name&gt;mimeType&lt;/name&gt;
+      &lt;value&gt;inlineUserTask&lt;/value&gt;
+    &lt;/nameValuePair&gt;
+  &lt;/artifactReference&gt;
+&lt;/dependencySummary&gt;</dependencySummary>
+        <jsonData>{"rootElement":[{"flowElement":[{"parallelMultiple":false,"outgoing":["bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09"],"isInterrupting":true,"extensionElements":{"default":["bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09"],"nodeVisualInfo":[{"color":"#F8F8F8","width":24,"x":25,"y":80,"declaredType":"TNodeVisualInfo","height":24}]},"name":"Start","declaredType":"startEvent","id":"7c4e50f8-945b-4152-b658-e7e3e86c39eb"},{"incoming":["35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b"],"extensionElements":{"nodeVisualInfo":[{"color":"#F8F8F8","width":24,"x":650,"y":80,"declaredType":"TNodeVisualInfo","height":24}]},"name":"End","declaredType":"endEvent","id":"fa58d257-fb40-48a7-a185-d016454bd27a"},{"startQuantity":1,"outgoing":["3c75a81c-6970-4e52-851a-c26b8ad507b7"],"incoming":["bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09"],"resourceRole":[{"teamAssignmentType":"Reference","name":"Lane","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"None","teamFilterService":{}},{"teamAssignmentType":"Reference","name":"Team","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"None","teamFilterService":{}},{"name":"Expert","declaredType":"performer"}],"default":"3c75a81c-6970-4e52-851a-c26b8ad507b7","extensionElements":{"activityExtension":[{"conditionScript":"","conditional":false,"transactionalBehavior":"NotSet","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"}],"nodeVisualInfo":[{"width":95,"x":202,"y":51,"declaredType":"TNodeVisualInfo","height":70}],"userTaskSettings":[{"activityAssignmentType":"Lane","activityWorkSchedule":{"timezoneType":0,"timeScheduleType":0,"holidayScheduleType":0},"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUserTaskSettings","activityPriority":{"type":"Priority","priority":"Normal"},"activityDueDate":{"dueDate":{"unit":"Hours","value":"1","timeOfDay":"00:00"},"timeZone":{"type":"TimeZone","value":"(use default)"},"type":"TimeCalculation"}}],"activityType":["InlineUserTask"]},"name":"Inline User Task","isForCompensation":false,"completionQuantity":1,"declaredType":"callActivity","id":"308810b8-9662-4923-9643-3a3f984ac5da","calledElement":"1.f77964bf-2a32-4c46-8906-f2a2c68324b8"},{"targetRef":"308810b8-9662-4923-9643-3a3f984ac5da","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"To Inline User Task","declaredType":"sequenceFlow","id":"bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09","sourceRef":"7c4e50f8-945b-4152-b658-e7e3e86c39eb"},{"targetRef":"f325cea8-e0dc-4e14-8cdb-1f9e7e89d685","extensionElements":{"sequenceFlowImplementation":[{"fireValidation":"Never","sboSyncEnabled":true,"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmext.TSequenceFlowImplementation"}],"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":true,"showLabel":false}],"happySequence":[true]},"name":"To Inline User Task 1","declaredType":"sequenceFlow","id":"3c75a81c-6970-4e52-851a-c26b8ad507b7","sourceRef":"308810b8-9662-4923-9643-3a3f984ac5da"},{"itemSubjectRef":"itm.12.db884a3c-c533-44b7-bb2d-47bec8ad4022","name":"variable1","isCollection":false,"declaredType":"dataObject","id":"32af5a8d-92a7-4c6a-8138-1362dad810b2"},{"parallelMultiple":false,"outgoing":["35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b"],"incoming":["84d4664d-28d6-47a5-827c-bfdca394f792"],"eventDefinition":[{"trackingPoint":{"externalUniqueId":"34a85e8a-9416-4fec-87a7-336e42176d83","dataInputAssociation":[{"targetRef":"17.b919b4dd-b22b-4308-8d62-3f8c84b8eff7","assignment":[{"from":{"evaluatesToTypeRef":"itm.12.db884a3c-c533-44b7-bb2d-47bec8ad4022","declaredType":"TFormalExpression","content":["tw.local.variable1"]}}]}],"trackingGroupRef":"14.a1cb553b-0057-4463-ab3a-04a81b4a855e"},"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TTrackingEventDefinition","id":"3fe8260b-d457-4086-842f-499f04e0e3e9","otherAttributes":{"eventImplId":"b96b36eb-c5f0-427f-8714-20b7569be368"}}],"extensionElements":{"default":["35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b"],"nodeVisualInfo":[{"width":24,"x":481,"y":57,"declaredType":"TNodeVisualInfo","height":24}]},"name":"Intermediate Event","declaredType":"intermediateCatchEvent","id":"2f479909-432e-45b2-83f8-a3df35f08dea"},{"targetRef":"fa58d257-fb40-48a7-a185-d016454bd27a","extensionElements":{"sequenceFlowImplementation":[{"fireValidation":"Never","sboSyncEnabled":true,"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmext.TSequenceFlowImplementation"}],"linkVisualInfo":[{"sourcePortLocation":"bottomCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"leftCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":true,"showLabel":false}],"happySequence":[true]},"name":"To End","declaredType":"sequenceFlow","id":"35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b","sourceRef":"2f479909-432e-45b2-83f8-a3df35f08dea"},{"startQuantity":1,"outgoing":["84d4664d-28d6-47a5-827c-bfdca394f792"],"incoming":["3c75a81c-6970-4e52-851a-c26b8ad507b7"],"resourceRole":[{"teamAssignmentType":"Reference","name":"Lane","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"None","teamFilterService":{}},{"teamAssignmentType":"Reference","name":"Team","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityPerformer","distribution":"None","teamFilterService":{}},{"name":"Expert","declaredType":"performer"}],"default":"84d4664d-28d6-47a5-827c-bfdca394f792","extensionElements":{"activityExtension":[{"conditionScript":"","conditional":false,"transactionalBehavior":"NotSet","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TActivityExtension"}],"nodeVisualInfo":[{"width":95,"x":345,"y":50,"declaredType":"TNodeVisualInfo","height":70}],"deleteTaskOnCompletion":[false],"userTaskSettings":[{"activityAssignmentType":"Lane","activityWorkSchedule":{"timezoneType":0,"timeScheduleType":0,"holidayScheduleType":0},"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TUserTaskSettings","activityPriority":{"type":"Priority","priority":"Normal"},"activityDueDate":{"dueDate":{"unit":"Hours","value":"1","timeOfDay":"00:00"},"timeZone":{"type":"TimeZone","value":"(use default)"},"type":"TimeCalculation"}}],"activityType":["ServiceTask"]},"name":"Inline User Task 1","isForCompensation":false,"completionQuantity":1,"declaredType":"callActivity","id":"f325cea8-e0dc-4e14-8cdb-1f9e7e89d685","calledElement":"1.64f0bfcd-9273-4ee7-a521-9bc9209f57ff"},{"targetRef":"2f479909-432e-45b2-83f8-a3df35f08dea","extensionElements":{"linkVisualInfo":[{"sourcePortLocation":"rightCenter","showCoachControlLabel":false,"labelPosition":0.0,"targetPortLocation":"topCenter","declaredType":"TLinkVisualInfo","saveExecutionContext":false,"showLabel":false}],"happySequence":[true]},"name":"To Intermediate Event","declaredType":"sequenceFlow","id":"84d4664d-28d6-47a5-827c-bfdca394f792","sourceRef":"f325cea8-e0dc-4e14-8cdb-1f9e7e89d685"},{"parallelMultiple":false,"dataOutput":[{"itemSubjectRef":"itm.19e8dc33-1100-46be-89a6-36c9040f7b3e","name":"error","isCollection":false,"id":"0fc964b4-1399-4141-8424-6a5072d5bcaa"}],"eventDefinition":[{"extensionElements":{"errorEventSettings":[{"catchAll":true,"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TErrorEventSettings"}]},"declaredType":"errorEventDefinition","id":"9b5ced92-fa98-419a-84d0-ca2a7db111e7","otherAttributes":{"eventImplId":"2554ae58-f58e-4b5a-8b45-f537427059f9"}}],"attachedToRef":"f325cea8-e0dc-4e14-8cdb-1f9e7e89d685","extensionElements":{"nodeVisualInfo":[{"width":24,"x":380,"y":108,"declaredType":"TNodeVisualInfo","height":24}]},"cancelActivity":true,"name":"Error","declaredType":"boundaryEvent","id":"779872fd-7be3-469c-8970-bfcabcb6d45c","outputSet":{}}],"laneSet":[{"id":"1447295d-eb75-4d88-a86f-23325a097342","lane":[{"flowNodeRef":["7c4e50f8-945b-4152-b658-e7e3e86c39eb","fa58d257-fb40-48a7-a185-d016454bd27a","308810b8-9662-4923-9643-3a3f984ac5da","2f479909-432e-45b2-83f8-a3df35f08dea","f325cea8-e0dc-4e14-8cdb-1f9e7e89d685","779872fd-7be3-469c-8970-bfcabcb6d45c"],"extensionElements":{"nodeVisualInfo":[{"color":"#F8F8F8","width":3000,"x":0,"y":0,"declaredType":"TNodeVisualInfo","height":200}]},"name":"All Users","partitionElementRef":"24.da7e4d23-78cb-4483-98ed-b9c238308a03","declaredType":"lane","id":"b49a5ac0-b16f-40a7-a2f4-42ce0de54a5f","otherAttributes":{"{http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/bpmn\/ext\/process\/wle}isSystemLane":"false"}},{"extensionElements":{"nodeVisualInfo":[{"color":"#F8F8F8","width":3000,"x":0,"y":201,"declaredType":"TNodeVisualInfo","height":200}]},"name":"System","partitionElementRef":"24.6fd38d02-81cf-48ab-bd42-8ff4c0a1628b","declaredType":"lane","id":"41f40a8c-b3c3-4a35-b46c-720dad61486f","otherAttributes":{"{http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/bpmn\/ext\/process\/wle}isSystemLane":"true"}}]}],"resourceRole":[{"name":"participantRef","declaredType":"resourceRole"},{"name":"businessDataParticipantRef","declaredType":"resourceRole"},{"name":"perfMetricParticipantRef","declaredType":"resourceRole"},{"name":"ownerTeamParticipantRef","declaredType":"resourceRole"}],"isClosed":false,"extensionElements":{"bpdExtension":[{"allowContentOperations":false,"enableTracking":true,"workSchedule":{"timezoneType":0,"timeScheduleType":0,"holidayScheduleType":0},"instanceName":"\"Process:\" + tw.system.process.instanceId","dueDateSettings":{"dueDate":{"unit":"Hours","value":"8","timeOfDay":"00:00"},"type":"TimeCalculation"},"autoTrackingName":"at1682405244211","declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmwleext.TBPDExtension","optimizeExecForLatency":false,"dueDateEnabled":true,"atRiskCalcEnabled":true,"allowProjectedPathManagement":false,"autoTrackingEnabled":true,"sboSyncEnabled":true}],"caseExtension":[{"declaredType":"com.ibm.bpmsdk.model.bpmn20.ibmcaseext.TCaseExtension","caseFolder":{"allowSubfoldersCreation":false,"allowLocalDoc":false,"id":"085e5d25-0574-4862-8268-6cfe58198c26","allowExternalFolder":false,"allowExternalDoc":false}}],"isConvergedProcess":[true]},"documentation":[{"textFormat":"text\/plain"}],"name":"Process","declaredType":"process","id":"25.66132c8c-8c90-4685-9736-8dba627f3259","processType":"None","otherAttributes":{"{http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/bpmn\/ext\/process}executionMode":"longRunning"},"ioSpecification":{"inputSet":[{},{"id":"_2fccc075-387f-438b-ac1e-09be50f13641"}],"outputSet":[{},{"id":"_d8b0578d-ec74-40f2-a771-2a33e7ed11fd"}],"dataInput":[{"itemSubjectRef":"itm.12.db884a3c-c533-44b7-bb2d-47bec8ad4022","name":"input1","isCollection":false,"id":"2007.199f9bdc-cc52-4508-87bb-84042b872060"}]}},{"name":"ProcessInterface","declaredType":"interface","id":"_85ef5e49-2eda-484e-a56b-ed8dcee364e3"},{"implementation":"##unspecified","name":"1.f77964bf-2a32-4c46-8906-f2a2c68324b8","declaredType":"globalUserTask","id":"1.f77964bf-2a32-4c46-8906-f2a2c68324b8","ioSpecification":{"inputSet":[{"id":"4770ecd5-91ab-40d6-9262-6977c4ab782a"}],"outputSet":[{"id":"97210159-f346-44da-bfad-a2172178a9ad"}]}}],"targetNamespace":"","typeLanguage":"http:\/\/www.w3.org\/2001\/XMLSchema","expressionLanguage":"http:\/\/www.ibm.com\/xmlns\/prod\/bpm\/expression-lang\/javascript","id":"0678868f-c045-421a-b63a-3ee3f64ca735"}</jsonData>
+        <migrationData isNull="true" />
+        <rwfData isNull="true" />
+        <rwfStatus isNull="true" />
+        <templateId isNull="true" />
+        <externalId isNull="true" />
+        <guid>guid:a7cf45dfc3371287:-33c792e9:187b6fd4ab3:5653</guid>
+        <versionId>8fb27a72-b596-40f9-b23f-4e77ea019f59</versionId>
+        <field1 isNull="true" />
+        <field2 isNull="true" />
+        <field3>0</field3>
+        <field4 isNull="true" />
+        <field5>false</field5>
+        <clobField1 isNull="true" />
+        <blobField1 isNull="true" />
+        <BusinessProcessDiagram id="bpdid:a7cf45dfc3371287:-33c792e9:187b6fd4ab3:5652">
+            <metadata>
+                <entry>
+                    <key>SAP_META.SHOULDRECOVER</key>
+                    <value>no</value>
+                </entry>
+            </metadata>
+            <name>Process</name>
+            <documentation></documentation>
+            <name>Process</name>
+            <dimension>
+                <size w="600" h="150" />
+            </dimension>
+            <author>trghat581</author>
+            <isTrackingEnabled>true</isTrackingEnabled>
+            <isCriticalPathEnabled>false</isCriticalPathEnabled>
+            <isSpcEnabled>false</isSpcEnabled>
+            <isDueDateEnabled>true</isDueDateEnabled>
+            <isAtRiskCalcEnabled>true</isAtRiskCalcEnabled>
+            <creationDate>1682405244286</creationDate>
+            <modificationDate>1683193379278</modificationDate>
+            <metricSettings itemType="2" />
+            <instanceNameExpression>"Process:" + tw.system.process.instanceId</instanceNameExpression>
+            <dueDateType>1</dueDateType>
+            <dueDateTime>8</dueDateTime>
+            <dueDateTimeResolution>1</dueDateTimeResolution>
+            <dueDateTimeTOD>00:00</dueDateTimeTOD>
+            <officeIntegration>
+                <sharePointParentSiteDisabled>true</sharePointParentSiteDisabled>
+                <sharePointParentSiteName>&lt;#= tw.system.process.name #&gt;</sharePointParentSiteName>
+                <sharePointParentSiteTemplate>ParentSiteTemplate.stp</sharePointParentSiteTemplate>
+                <sharePointWorkspaceSiteName>&lt;#= tw.system.process.name #&gt; &lt;#= tw.system.process.instanceId #&gt;</sharePointWorkspaceSiteName>
+                <sharePointWorkspaceSiteDescription>This site has been automatically generated for managing collaborations and documents 
+for the Lombardi TeamWorks process instance: &lt;#= tw.system.process.name #&gt; &lt;#= tw.system.process.instanceId #&gt;
+
+TeamWorks Link:  ~APPSERVER_URL~/portal/jsp/getProcessDetails.do?bpdInstanceId=&lt;#= tw.system.process.instanceId #&gt;
+
+</sharePointWorkspaceSiteDescription>
+                <sharePointWorkspaceSiteTemplate>WorkspaceSiteTemplate.stp</sharePointWorkspaceSiteTemplate>
+                <sharePointLCID>1033</sharePointLCID>
+            </officeIntegration>
+            <timeScheduleType>0</timeScheduleType>
+            <holidayScheduleType>0</holidayScheduleType>
+            <timezoneType>0</timezoneType>
+            <executionProfile>default</executionProfile>
+            <isSBOSyncEnabled>true</isSBOSyncEnabled>
+            <allowContentOperations>false</allowContentOperations>
+            <isLegacyCaseMigrated>false</isLegacyCaseMigrated>
+            <hasCaseObjectParams>false</hasCaseObjectParams>
+            <defaultPool>
+                <BpmnObjectId id="1447295d-eb75-4d88-a86f-23325a097342" />
+            </defaultPool>
+            <defaultInstanceUI id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4699" />
+            <ownerTeamInstanceUI id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-469a" />
+            <simulationScenario id="bpdid:a7cf45dfc3371287:-33c792e9:187b6fd4ab3:5666">
+                <name>Default</name>
+                <simNumInstances>100</simNumInstances>
+                <simMinutesBetween>30</simMinutesBetween>
+                <maxInstances>100</maxInstances>
+                <useMaxInstances>true</useMaxInstances>
+                <continueFromReal>false</continueFromReal>
+                <useParticipantCalendars>false</useParticipantCalendars>
+                <useDuration>false</useDuration>
+                <duration>86400</duration>
+                <startTime>1682405245167</startTime>
+            </simulationScenario>
+            <flow id="35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b" connectionType="SequenceFlow">
+                <name>To End</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4682" />
+                </connection>
+            </flow>
+            <flow id="3c75a81c-6970-4e52-851a-c26b8ad507b7" connectionType="SequenceFlow">
+                <name>To Inline User Task 1</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4681" />
+                </connection>
+            </flow>
+            <flow id="bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09" connectionType="SequenceFlow">
+                <name>To Inline User Task</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4680" />
+                </connection>
+            </flow>
+            <flow id="84d4664d-28d6-47a5-827c-bfdca394f792" connectionType="SequenceFlow">
+                <name>To Intermediate Event</name>
+                <documentation></documentation>
+                <nameVisible>false</nameVisible>
+                <metricSettings itemType="32" />
+                <connection>
+                    <lineType>0</lineType>
+                    <condition id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-467f" />
+                </connection>
+            </flow>
+            <pool id="1447295d-eb75-4d88-a86f-23325a097342">
+                <name>Pool</name>
+                <documentation></documentation>
+                <restrictedName>at1682405244211</restrictedName>
+                <dimension>
+                    <size w="3000" h="200" />
+                </dimension>
+                <autoTrackingEnabled>true</autoTrackingEnabled>
+                <lane id="b49a5ac0-b16f-40a7-a2f4-42ce0de54a5f">
+                    <name>All Users</name>
+                    <height>200</height>
+                    <laneColor>0</laneColor>
+                    <systemLane>false</systemLane>
+                    <attachedParticipant>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.da7e4d23-78cb-4483-98ed-b9c238308a03</attachedParticipant>
+                    <flowObject id="308810b8-9662-4923-9643-3a3f984ac5da" componentType="Activity">
+                        <name>Inline User Task</name>
+                        <documentation></documentation>
+                        <position>
+                            <location x="202" y="51" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <loopType>0</loopType>
+                            <loopMaximum>1</loopMaximum>
+                            <startQuantity>1</startQuantity>
+                            <isAutoflowable>false</isAutoflowable>
+                            <MIOrdering>1</MIOrdering>
+                            <MIFlowCondition>0</MIFlowCondition>
+                            <cancelRemainingInstances>false</cancelRemainingInstances>
+                            <metricSettings itemType="4" />
+                            <implementationType>1</implementationType>
+                            <isConditional>false</isConditional>
+                            <conditionScript></conditionScript>
+                            <bpmnTaskType>1</bpmnTaskType>
+                            <activityOptionType>REQUIRED</activityOptionType>
+                            <activityExecutionType>NONE</activityExecutionType>
+                            <activityExecutionTypePreviousValue>AUTOMATIC</activityExecutionTypePreviousValue>
+                            <isHidden>false</isHidden>
+                            <isRepeatable>false</isRepeatable>
+                            <transactionalBehavior>0</transactionalBehavior>
+                            <isRobotTask>false</isRobotTask>
+                            <implementation>
+                                <attachedActivityId>/1.f77964bf-2a32-4c46-8906-f2a2c68324b8</attachedActivityId>
+                                <sendToType>1</sendToType>
+                                <taskRouting>0</taskRouting>
+                                <dueDateType>1</dueDateType>
+                                <dueDateTime>1</dueDateTime>
+                                <dueDateTimeResolution>1</dueDateTimeResolution>
+                                <dueDateTimeTOD>00:00</dueDateTimeTOD>
+                                <priorityType>0</priorityType>
+                                <priority>30.30</priority>
+                                <forceSend>true</forceSend>
+                                <timeSchedule>(use default)</timeSchedule>
+                                <timeScheduleType>0</timeScheduleType>
+                                <timeZone>(use default)</timeZone>
+                                <timeZoneType>0</timeZoneType>
+                                <holidaySchedule>(use default)</holidaySchedule>
+                                <holidayScheduleType>0</holidayScheduleType>
+                                <laneFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4697">
+                                    <serviceType>1</serviceType>
+                                    <teamRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.da7e4d23-78cb-4483-98ed-b9c238308a03</teamRef>
+                                </laneFilter>
+                                <teamFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4696">
+                                    <serviceType>1</serviceType>
+                                </teamFilter>
+                            </implementation>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-468a">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4689">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="3c75a81c-6970-4e52-851a-c26b8ad507b7" />
+                        </outputPort>
+                    </flowObject>
+                    <flowObject id="f325cea8-e0dc-4e14-8cdb-1f9e7e89d685" componentType="Activity">
+                        <name>Inline User Task 1</name>
+                        <position>
+                            <location x="345" y="50" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <loopType>0</loopType>
+                            <loopMaximum>1</loopMaximum>
+                            <startQuantity>1</startQuantity>
+                            <isAutoflowable>false</isAutoflowable>
+                            <MIOrdering>1</MIOrdering>
+                            <MIFlowCondition>0</MIFlowCondition>
+                            <cancelRemainingInstances>false</cancelRemainingInstances>
+                            <metricSettings itemType="4" />
+                            <implementationType>1</implementationType>
+                            <isConditional>false</isConditional>
+                            <conditionScript></conditionScript>
+                            <bpmnTaskType>3</bpmnTaskType>
+                            <activityOptionType>REQUIRED</activityOptionType>
+                            <activityExecutionType>NONE</activityExecutionType>
+                            <activityExecutionTypePreviousValue>AUTOMATIC</activityExecutionTypePreviousValue>
+                            <isHidden>false</isHidden>
+                            <isRepeatable>false</isRepeatable>
+                            <transactionalBehavior>0</transactionalBehavior>
+                            <isRobotTask>false</isRobotTask>
+                            <implementation>
+                                <attachedActivityId>/1.64f0bfcd-9273-4ee7-a521-9bc9209f57ff</attachedActivityId>
+                                <sendToType>1</sendToType>
+                                <taskRouting>0</taskRouting>
+                                <dueDateType>1</dueDateType>
+                                <dueDateTime>1</dueDateTime>
+                                <dueDateTimeResolution>1</dueDateTimeResolution>
+                                <dueDateTimeTOD>00:00</dueDateTimeTOD>
+                                <priorityType>0</priorityType>
+                                <priority>30.30</priority>
+                                <forceSend>true</forceSend>
+                                <timeSchedule>(use default)</timeSchedule>
+                                <timeScheduleType>0</timeScheduleType>
+                                <timeZone>(use default)</timeZone>
+                                <timeZoneType>0</timeZoneType>
+                                <holidaySchedule>(use default)</holidaySchedule>
+                                <holidayScheduleType>0</holidayScheduleType>
+                                <laneFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4692">
+                                    <serviceType>1</serviceType>
+                                    <teamRef>7692552a-ea18-49ce-bd93-a1dd62100cd9/24.da7e4d23-78cb-4483-98ed-b9c238308a03</teamRef>
+                                </laneFilter>
+                                <teamFilter id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4691">
+                                    <serviceType>1</serviceType>
+                                </teamFilter>
+                            </implementation>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4688">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="3c75a81c-6970-4e52-851a-c26b8ad507b7" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4685">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="84d4664d-28d6-47a5-827c-bfdca394f792" />
+                        </outputPort>
+                        <attachedEvent id="779872fd-7be3-469c-8970-bfcabcb6d45c" componentType="Event">
+                            <name>Error</name>
+                            <documentation></documentation>
+                            <position>
+                                <location x="0" y="0" />
+                            </position>
+                            <positionId>bottomCenter</positionId>
+                            <dropIconUrl>0</dropIconUrl>
+                            <colorInput>Color</colorInput>
+                            <component>
+                                <nameVisible>true</nameVisible>
+                                <eventType>3</eventType>
+                                <cancelActivity>true</cancelActivity>
+                                <repeatable>false</repeatable>
+                                <doCloseTask>true</doCloseTask>
+                                <EventAction id="9b5ced92-fa98-419a-84d0-ca2a7db111e7">
+                                    <actionType>5</actionType>
+                                    <actionSubType>0</actionSubType>
+                                    <EventActionImplementation id="2554ae58-f58e-4b5a-8b45-f537427059f9">
+                                        <faultStyle>1</faultStyle>
+                                        <isCatchAll>true</isCatchAll>
+                                    </EventActionImplementation>
+                                </EventAction>
+                            </component>
+                        </attachedEvent>
+                    </flowObject>
+                    <flowObject id="7c4e50f8-945b-4152-b658-e7e3e86c39eb" componentType="Event">
+                        <name>Start</name>
+                        <documentation></documentation>
+                        <position>
+                            <location x="25" y="80" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#F8F8F8</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <eventType>1</eventType>
+                            <cancelActivity>true</cancelActivity>
+                            <repeatable>false</repeatable>
+                            <doCloseTask>true</doCloseTask>
+                        </component>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-468b">
+                            <positionId>rightCenter</positionId>
+                            <flow ref="bb4f5d23-5d17-4d2b-a6e7-0c62d516ff09" />
+                        </outputPort>
+                    </flowObject>
+                    <flowObject id="fa58d257-fb40-48a7-a185-d016454bd27a" componentType="Event">
+                        <name>End</name>
+                        <documentation></documentation>
+                        <position>
+                            <location x="650" y="80" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#F8F8F8</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <eventType>2</eventType>
+                            <cancelActivity>true</cancelActivity>
+                            <repeatable>false</repeatable>
+                            <doCloseTask>true</doCloseTask>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4686">
+                            <positionId>leftCenter</positionId>
+                            <input>true</input>
+                            <flow ref="35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b" />
+                        </inputPort>
+                    </flowObject>
+                    <flowObject id="2f479909-432e-45b2-83f8-a3df35f08dea" componentType="Event">
+                        <name>Intermediate Event</name>
+                        <documentation></documentation>
+                        <position>
+                            <location x="481" y="57" />
+                        </position>
+                        <dropIconUrl>0</dropIconUrl>
+                        <colorInput>#A5B7CD</colorInput>
+                        <component>
+                            <nameVisible>true</nameVisible>
+                            <eventType>3</eventType>
+                            <cancelActivity>true</cancelActivity>
+                            <repeatable>false</repeatable>
+                            <doCloseTask>true</doCloseTask>
+                            <EventAction id="3fe8260b-d457-4086-842f-499f04e0e3e9">
+                                <actionType>100</actionType>
+                                <actionSubType>0</actionSubType>
+                                <EventActionImplementation id="b96b36eb-c5f0-427f-8714-20b7569be368">
+                                    <trackingGroupId>/14.a1cb553b-0057-4463-ab3a-04a81b4a855e</trackingGroupId>
+                                    <externalUniqueId>34a85e8a-9416-4fec-87a7-336e42176d83</externalUniqueId>
+                                    <trackedVariableUse id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-468e">
+                                        <trackedVariableId>17.b919b4dd-b22b-4308-8d62-3f8c84b8eff7</trackedVariableId>
+                                        <valueExpression>tw.local.variable1</valueExpression>
+                                        <enabled>true</enabled>
+                                    </trackedVariableUse>
+                                </EventActionImplementation>
+                            </EventAction>
+                        </component>
+                        <inputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4684">
+                            <positionId>topCenter</positionId>
+                            <input>true</input>
+                            <flow ref="84d4664d-28d6-47a5-827c-bfdca394f792" />
+                        </inputPort>
+                        <outputPort id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4687">
+                            <positionId>bottomCenter</positionId>
+                            <flow ref="35dfa907-f0d0-4be1-8ad0-b77f3fd5c76b" />
+                        </outputPort>
+                    </flowObject>
+                </lane>
+                <inputParameter id="199f9bdc-cc52-4508-87bb-84042b872060">
+                    <bpdParameterId>2007.199f9bdc-cc52-4508-87bb-84042b872060</bpdParameterId>
+                    <isProcessInstanceCorrelator>false</isProcessInstanceCorrelator>
+                </inputParameter>
+                <privateVariable id="32af5a8d-92a7-4c6a-8138-1362dad810b2">
+                    <name>variable1</name>
+                    <description></description>
+                    <classId>7692552a-ea18-49ce-bd93-a1dd62100cd9/12.db884a3c-c533-44b7-bb2d-47bec8ad4022</classId>
+                    <arrayOf>false</arrayOf>
+                    <hasDefault>false</hasDefault>
+                    <visibleInSearch>false</visibleInSearch>
+                    <isProcessInstanceCorrelator>false</isProcessInstanceCorrelator>
+                    <isSharedContext>false</isSharedContext>
+                </privateVariable>
+            </pool>
+            <extension id="bpdid:8e2ee78fa327298d:3a3fc3bc:187e603dadf:-4683" type="CASE">
+                <caseFolder id="085e5d25-0574-4862-8268-6cfe58198c26">
+                    <allowLocalDoc>false</allowLocalDoc>
+                    <allowExternalDoc>false</allowExternalDoc>
+                    <allowSubfoldersCreation>false</allowSubfoldersCreation>
+                    <allowExternalFolder>false</allowExternalFolder>
+                </caseFolder>
+            </extension>
+        </BusinessProcessDiagram>
+    </bpd>
+</teamworks>
+

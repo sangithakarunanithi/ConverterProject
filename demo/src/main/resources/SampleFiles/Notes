@@ -1,0 +1,42 @@
+
+1. select name, path ,value, count(*) as cnt from aidaptechdtrainer.node
+where value is not null
+ group by name, path ,value
+ having cnt > 1;
+
+2, from this output[sheet1] get the [sheet 2]
+3. order by paths hierarchy [use / if needed]
+4. Identify the ENUM Values (Activity     Event Gateway)
+5. select parent_id from aidaptechdtrainer.node  where path = '/teamworks/bpd/BusinessProcessDiagram/pool/lane/flowObject/@componentType' and value = 'Activity'; and name = "componentType"; will return list of parents
+6. run the query with the list of parents as input
+SELECT aidaptechdtrainer.node.name,aidaptechdtrainer.node.path,aidaptechdtrainer.node.value,count(*) as cnt
+FROM aidaptechdtrainer.node
+JOIN (
+    WITH RECURSIVE cte AS (
+        SELECT id, parent_id
+        FROM aidaptechdtrainer.node
+        WHERE id IN ( 9901,
+10075,
+10240,
+10845) -- Pass the multiple input IDs here
+
+        UNION ALL
+
+        SELECT t.id, t.parent_id
+        FROM aidaptechdtrainer.node t
+        INNER JOIN cte ON t.parent_id = cte.id
+    )
+    SELECT id
+    FROM cte
+    WHERE id NOT IN ( 9901,
+10075,
+10240,
+10845) -- Exclude the input IDs from the result
+) AS cte ON aidaptechdtrainer.node.id = cte.id
+where aidaptechdtrainer.node.value is not null
+group by aidaptechdtrainer.node.name, aidaptechdtrainer.node.path,aidaptechdtrainer.node.value
+having cnt > 1
+ORDER BY aidaptechdtrainer.node.name;
+
+6. get all children, grandchildren
+7. Identify the ENUM [BPMN Task Type]
