@@ -165,6 +165,8 @@ public class NodeDataService
         HashMap<String,Integer> slashCountMap = new HashMap<String,Integer>();
         HashMap<String,List<String>> collectValueMap = new HashMap<String,List<String>>();
 
+        HashMap<String,KeyValueDTO> storevalueMap = new HashMap<String,KeyValueDTO>();
+
 
         for (KeyValueDTO element : findCommonKeyValuePathCount) {
             String keypath = element.getKeypath();
@@ -174,13 +176,17 @@ public class NodeDataService
             String keyname = element.getKeyname();
 
 
-
             if(collectValueMap.containsKey(keyname)){
                 collectValueMap.get(keyname).add(element.getKeyvalue());
+
+                storevalueMap.put(element.getKeyvalue(),element);
+
             }else{
                 List<String> list = new ArrayList<>();
                 list.add(element.getKeyvalue());
                 collectValueMap.put(element.getKeyname(),list);
+
+                storevalueMap.put(element.getKeyvalue(),element);
             }
 
         }
@@ -203,10 +209,29 @@ public class NodeDataService
         for( Map.Entry<String, List<String>> valuemap : collectValueMap.entrySet()){
             System.out.println(valuemap.getKey() + "====" + valuemap.getValue());
 
+            // fetch parentid
+           for(String eachValue :   valuemap.getValue()){
+               if(storevalueMap.containsKey(eachValue)){
+                   System.out.println("eachvalue " + eachValue);
+                   KeyValueDTO keydto = storevalueMap.get(eachValue);
+                   List<Integer> parentId = nodeDataRepository.fetchByParentID(keydto.getKeypath(), keydto.getKeyvalue(), keydto.getKeyname());
+                  parentId.stream().forEach(System.out::println);
+
+
+                   //step 6 : run query with list of parentid
+
+
+
+
+
+               }
+           }
 
         }
 
-// fetch parentid
+
+
+
 
 
 

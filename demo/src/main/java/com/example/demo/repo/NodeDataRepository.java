@@ -35,9 +35,17 @@ public interface NodeDataRepository extends JpaRepository<Nodedata, Integer>
     @Query("SELECT name FROM Nodedata")
    List<String> findAgg();
 
-//    @Query("select parent_id from Nodedata  where path = ?1 and value = ?2  and name = ?3")
-//    List<Integer> fetchByParentID(String path, String value, String name);
+    @Query("select parentId from Nodedata  where path = ?1 and value = ?2  and name = ?3")
+    List<Integer> fetchByParentID(String path, String value, String name);
 
+    @Query("SELECT name, path, value,count(*) as count FROM Nodedata JOIN ( WITH RECURSIVE cte AS ( " +
+            "SELECT id, parentId FROM nodedata WHERE id IN ( ?1 ) " +
+            "UNION all " +
+            "SELECT t.id, t.parent_id FROM Nodedata t INNER JOIN cte ON parentId = cte.id ) " +
+            "SELECT id FROM cte WHERE id NOT IN ( ?1 ) ) AS cte ON db.nodedata.id = cte.id " +
+            "where value is not null group by name, path,value having cnt > 1 " +
+            "ORDER BY name")
+    List<KeyValueDTO> findAllChild();
 
 
 
