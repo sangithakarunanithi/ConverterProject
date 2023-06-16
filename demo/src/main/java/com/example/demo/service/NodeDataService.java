@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class NodeDataService
@@ -212,15 +213,26 @@ public class NodeDataService
             // fetch parentid
            for(String eachValue :   valuemap.getValue()){
                if(storevalueMap.containsKey(eachValue)){
-                   System.out.println("eachvalue " + eachValue);
+                  System.out.println("eachvalue " + eachValue);
                    KeyValueDTO keydto = storevalueMap.get(eachValue);
                    List<Integer> parentId = nodeDataRepository.fetchByParentID(keydto.getKeypath(), keydto.getKeyvalue(), keydto.getKeyname());
                   parentId.stream().forEach(System.out::println);
 
 
                    //step 6 : run query with list of parentid
+                   List<KeyValueDTO> childData = nodeDataRepository.findChildDataByParentId(parentId);
+
+                   System.out.println(" *************************************** " );
 
 
+                   System.out.println(" *************************************** " + childData);
+
+                   List<KeyValueDTO> childInfo = childData.stream().map(
+                           x ->{
+                               KeyValueDTO  keyValueDTO = new KeyValueDTO();
+
+                               return keyValueDTO;
+                           }).collect(Collectors.toList());
 
 
 
