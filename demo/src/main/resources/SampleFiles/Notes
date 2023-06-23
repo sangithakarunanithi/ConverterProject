@@ -40,3 +40,27 @@ ORDER BY aidaptechdtrainer.node.name;
 
 6. get all children, grandchildren
 7. Identify the ENUM [BPMN Task Type]
+
+
+
+Download softwares:
+jhipster
+consul
+keycloak
+kafka
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+consul.exe agent -dev
+
+kc.bat start-dev --http-port=9080
+
+in keyclock : login to console:
+http://localhost:9080/admin/master/console/#/axelra/users
+
+1. create new user,group,role
+
+
+run project:
+./mvnw
