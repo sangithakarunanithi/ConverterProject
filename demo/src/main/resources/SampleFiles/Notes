@@ -49,12 +49,27 @@ consul
 keycloak
 kafka
 
+
+
+
+
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 consul.exe agent -dev
 
 kc.bat start-dev --http-port=9080
+
+
+
+
+
+
+
+
+
+
+
 
 in keyclock : login to console:
 http://localhost:9080/admin/master/console/#/axelra/users
@@ -64,3 +79,23 @@ http://localhost:9080/admin/master/console/#/axelra/users
 
 run project:
 ./mvnw
+
+
+
+
+  select A.count as occurance ,B.Count as uniquevalue
+    from (
+   select count(*) as count from node_data
+where  name='componentType'
+and path ='/teamworks/bpd/BusinessProcessDiagram/pool/lane/flowObject/@componentType'
+
+    ) A
+ Inner join
+ (
+select DISTINCT  COUNT(*) OVER () AS Count
+from node_data
+where  name='componentType'
+and path ='/teamworks/bpd/BusinessProcessDiagram/pool/lane/flowObject/@componentType'
+ group by name, path, value
+
+ ) B ;

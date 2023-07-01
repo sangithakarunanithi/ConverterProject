@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 
+import com.example.demo.dto.ChildKeyValueDTO;
 import com.example.demo.dto.KeyValueDTO;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -31,7 +32,7 @@ import lombok.Data;
                 "        ORDER BY db.nodedata.name",
         resultSetMapping = "Mapping.ChildDataByParentId")
 @SqlResultSetMapping(name = "Mapping.ChildDataByParentId",
-        classes = @ConstructorResult(targetClass = KeyValueDTO.class,
+        classes = @ConstructorResult(targetClass = ChildKeyValueDTO.class,
                 columns = {@ColumnResult(name = "keyname"),
                         @ColumnResult(name = "keypath"),
                         @ColumnResult(name = "keyvalue"),

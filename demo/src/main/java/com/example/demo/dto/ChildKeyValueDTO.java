@@ -6,19 +6,19 @@ import java.util.HashMap;
 import java.util.List;
 
 @Data
-public class KeyValueDTO {
+public class ChildKeyValueDTO {
 
     public String keyname;
     public String keyvalue;
     public String keypath;
     public Long count;
-    List<HashMap<String,KeyValueDTO>> enumvalue;
+    List<HashMap<String, ChildKeyValueDTO>> enumvalue;
 
 
 
-    public KeyValueDTO(){}
+    public ChildKeyValueDTO(){}
 
-    public KeyValueDTO(String keyname, String keyvalue, String keypath, Long count, List<HashMap<String, KeyValueDTO>> enumvalue) {
+    public ChildKeyValueDTO(String keyname, String keyvalue, String keypath, Long count, List<HashMap<String, ChildKeyValueDTO>> enumvalue) {
         this.keyname = keyname;
         this.keyvalue = keyvalue;
         this.keypath = keypath;
@@ -26,21 +26,18 @@ public class KeyValueDTO {
         this.enumvalue = enumvalue;
     }
 
-    public KeyValueDTO(String keyname, String keyvalue, String keypath) {
+    public ChildKeyValueDTO(String keyname, String keyvalue, String keypath) {
         this.keyname = keyname;
         this.keyvalue = keyvalue;
         this.keypath = keypath;
     }
 
-
     @Override
     public String toString() {
-        return
-                "{keyname='" + keyname + '\'' +
+        return "ChildKeyValueDTO{" +
+                "keyname='" + keyname + '\'' +
                 ", keyvalue='" + keyvalue + '\'' +
                 ", keypath='" + keypath + '\'' +
-                ", count=" + count +
-                ", enumvalue=" + enumvalue +
-                '}';
+                ", count=" + count ;
     }
 }

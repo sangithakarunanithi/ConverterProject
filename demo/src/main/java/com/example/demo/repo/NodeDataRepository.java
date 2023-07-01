@@ -1,5 +1,6 @@
 package com.example.demo.repo;
 
+import com.example.demo.dto.ChildKeyValueDTO;
 import com.example.demo.dto.KeyValueDTO;
 
 import com.example.demo.model.Nodedata;
@@ -74,7 +75,7 @@ public interface NodeDataRepository extends JpaRepository<Nodedata, Integer>
 
 
     @Query(nativeQuery = true)
-    List<KeyValueDTO> findChildDataByParentId(List<Integer> parentId);
+    List<ChildKeyValueDTO> findChildDataByParentId(List<Integer> parentId);
 
 
 }

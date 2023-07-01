@@ -4,7 +4,6 @@ package com.example.demo.service;
 import com.example.demo.dto.ChildKeyValueDTO;
 import com.example.demo.dto.KeyValueDTO;
 import com.example.demo.dto.NameValuePath;
-import com.example.demo.model.Nodedata;
 import com.example.demo.repo.NodeDataRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +12,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-public class NodeDataService
+public class DummyNodeDataService
 {
 
     @Autowired
